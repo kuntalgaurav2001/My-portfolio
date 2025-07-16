@@ -30,7 +30,10 @@
     <!-- Top Navigation Bar -->
     <header class="navbar glass">
         <div class="navbar-logo">Gaurav Kuntal</div>
-        <nav class="navbar-links">
+        <button class="navbar-hamburger" id="navbar-hamburger" aria-label="Open navigation menu">
+            <span></span><span></span><span></span>
+        </button>
+        <nav class="navbar-links" id="navbar-links">
             <a href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#skills">Skills</a>
@@ -41,14 +44,26 @@
         </nav>
         <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode"><i class="fas fa-moon"></i></button>
     </header>
+    <!-- Mobile Navigation Bar -->
+    <nav class="mobile-navbar" id="mobile-navbar">
+        <a href="#home"><i class="fa fa-home"></i><span>Home</span></a>
+        <a href="#about"><i class="fa fa-user"></i><span>About</span></a>
+        <a href="#skills"><i class="fa fa-cogs"></i><span>Skills</span></a>
+        <a href="#experience"><i class="fa fa-briefcase"></i><span>Experience</span></a>
+        <a href="#projects"><i class="fa fa-folder-open"></i><span>Projects</span></a>
+        <a href="#testimonials"><i class="fa fa-quote-right"></i><span>Testimonials</span></a>
+        <a href="#contact"><i class="fa fa-envelope"></i><span>Contact</span></a>
+    </nav>
     <main>
         <!-- Hero Section -->
         <section class="hero-section" id="home">
             <div class="glass hero-card">
                 <div class="profile-frame profile-frame-circle">
-                    <div class="photo-bg"></div>
+                    <span class="sparkle sparkle1"></span>
+                    <span class="sparkle sparkle2"></span>
+                    <span class="sparkle sparkle3"></span>
                     <img src="myself.jpg" alt="Gaurav Kumar Kuntal" class="profile-img profile-img-circle">
-            </div>
+                </div>
                 <h1>Hello, I'm <span class="highlight">Gaurav Kumar Kuntal</span></h1>
                 <h2><span id="typed"></span></h2>
                 <p>Passionate Backend Developer with hands-on experience in building robust and scalable web applications. Specialized in Python, Django, Django REST Framework, and FastAPI for RESTful APIs and backend systems. Experienced in real-time video management, encryption, authentication, and cloud technologies.</p>
