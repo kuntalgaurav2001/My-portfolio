@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Gaurav Portfolio</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ===== CSS Files ===== -->
+    <!-- > -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" 
+  href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link rel="stylesheet" href="css/skins/color-1.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- ====== Style Switcher ====== -->
+    <link rel="stylesheet" href="css/skins/color-1.css" class="alternate-style" title="color-1" disabled>
+    <link rel="stylesheet" href="css/skins/color-2.css" class="alternate-style" title="color-2" disabled>
+    <link rel="stylesheet" href="css/skins/color-3.css" class="alternate-style" title="color-3" disabled>
+    <link rel="stylesheet" href="css/skins/color-4.css" class="alternate-style" title="color-4" disabled>
+    <link rel="stylesheet" href="css/skins/color-5.css" class="alternate-style" title="color-5" disabled>
+    <link rel="stylesheet" href="css/style-switcher.css">
+</head>
+
+<body>
+    <!-- Top Navigation Bar -->
+    <header class="navbar glass">
+        <div class="navbar-logo">Gaurav Kuntal</div>
+        <nav class="navbar-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode"><i class="fas fa-moon"></i></button>
+    </header>
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section" id="home">
+            <div class="glass hero-card">
+                <div class="profile-frame profile-frame-circle">
+                    <div class="photo-bg"></div>
+                    <img src="myself.jpg" alt="Gaurav Kumar Kuntal" class="profile-img profile-img-circle">
+            </div>
+                <h1>Hello, I'm <span class="highlight">Gaurav Kumar Kuntal</span></h1>
+                <h2><span id="typed"></span></h2>
+                <p>Passionate Backend Developer with hands-on experience in building robust and scalable web applications. Specialized in Python, Django, Django REST Framework, and FastAPI for RESTful APIs and backend systems. Experienced in real-time video management, encryption, authentication, and cloud technologies.</p>
+                <a href="#contact" class="btn primary-btn">Hire Me</a>
+            </div>
+        </section>
+        <!-- About Section -->
+        <section class="about-section" id="about">
+            <div class="glass card">
+                <h2>About Me</h2>
+                <p style="margin-bottom: 0.5em;">
+                    <span style="font-size:1.3em;"></span> Hi, I'm <b>Gaurav Kuntal</b> a FullStack Developer passionate about building scalable, secure, and real-time web applications.
+                </p>
+                <div style="margin-bottom: 0.7em;"><b>Expertise:</b></div>
+                <ul style="margin-top:0; margin-bottom:0.7em;">
+                    <li> Python, Django, Django REST Framework, FastAPI</li>
+                    <li> RESTful API design & backend architecture</li>
+                    <li> Database design (PostgreSQL, MySQL, MongoDB, SQLite)</li>
+                    <li> Authentication, authorization, and security best practices</li>
+                </ul>
+                <div style="margin:1em 0 0.7em 0;"><b>Highlighted Projects:</b></div>
+                <ul style="margin-top:0; margin-bottom:0.7em;">
+                    <li><b>Video Management Software:</b> Real-time IP camera streaming, OpenCV, FFmpeg, WebSocket, RTSP, AES-256 encryption, JWT authentication, secure playback, PostgreSQL, SHA-256.</li>
+                    <li> <b>Restaurant Web Application:</b> React.js frontend, Django backend, dynamic menu, table booking, customer feedback, role-based access, REST APIs.</li>
+                    <li><b>Employee Management System:</b> Automated HR (onboarding, attendance, payroll), secure authentication, modular APIs, optimized databases.</li>
+            </ul>
+                <p style="margin-top:1em;">
+                    <span style="font-size:1.1em;"></span> I thrive on solving real-world problems and continuously learning new technologies. Let's build something amazing together!
+                </p>
+                <div class="about-info-row">
+                    <span><i class="fa fa-envelope"></i> gauravkmadhuaka@gmail.com</span>
+                    <span><i class="fa fa-phone"></i> +91 7451967933</span>
+                    <span><i class="fa fa-map-marker-alt"></i> Mathura</span>
+                        </div>
+                <a href="Gauravkuntal_Resume.pdf" class="btn secondary-btn" download><i class="fa fa-download"></i> Download CV</a>
+                </div>
+				</section>
+        <!-- Skills Section -->
+        <section class="skills-section" id="skills">
+            <div class="glass card">
+                <h2>Technical Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-card"><i class="fab fa-python"></i><span>Python</span></div>
+                    <div class="skill-card"><i class="fab fa-python"></i><span>Django</span></div>
+                    <div class="skill-card"><i class="fas fa-link"></i><span>Django REST Framework</span></div>
+                    <div class="skill-card"><i class="fas fa-plug"></i><span>REST API</span></div>
+                    <div class="skill-card"><i class="fas fa-bolt"></i><span>FastAPI</span></div>
+                    <div class="skill-card"><i class="fab fa-react"></i><span>React</span></div>
+                    <div class="skill-card"><i class="fab fa-html5"></i><span>HTML5</span></div>
+                    <div class="skill-card"><i class="fab fa-css3-alt"></i><span>CSS3</span></div>
+                    <div class="skill-card"><i class="fab fa-js"></i><span>JavaScript</span></div>
+                    <div class="skill-card"><i class="fas fa-database"></i><span>MySQL</span></div>
+                    <div class="skill-card"><i class="fab fa-docker"></i><span>Docker</span></div>
+                    <div class="skill-card"><i class="fab fa-aws"></i><span>AWS</span></div>
+                    <div class="skill-card"><i class="fab fa-react"></i><span>React Native</span></div>
+                    <div class="skill-card"><i class="fas fa-database"></i><span>PostgreSQL</span></div>
+                    <div class="skill-card"><i class="fas fa-database"></i><span>SQLite</span></div>
+                    <div class="skill-card"><i class="fas fa-code"></i><span>C Language (Basic)</span></div>
+                    <div class="skill-card"><i class="fas fa-code"></i><span>C++</span></div>
+                    <div class="skill-card"><i class="fab fa-java"></i><span>Java & OOPs Concept</span></div>
+                    <div class="skill-card"><i class="fas fa-memory"></i><span>Redis</span></div>
+                    <div class="skill-card"><i class="fas fa-tasks"></i><span>Celery</span></div>
+                    <div class="skill-card"><i class="fas fa-search"></i><span>Web Scraping</span></div>
+                    <div class="skill-card"><i class="fas fa-camera"></i><span>OpenCV</span></div>
+                    <div class="skill-card"><i class="fas fa-film"></i><span>FFmpeg</span></div>
+                    <div class="skill-card"><i class="fas fa-exchange-alt"></i><span>WebSocket</span></div>
+                        </div>
+                    </div>
+        </section>
+        <!-- Experience Section -->
+        <section class="experience-section" id="experience">
+            <div class="glass card">
+                <h2>Experience</h2>
+                <div class="timeline-vertical">
+                    <div class="timeline-item"><span class="timeline-date">2023</span><span class="timeline-title">Web Developer Intern - Bharat Intern</span></div>
+                    <div class="timeline-item"><span class="timeline-date">2023</span><span class="timeline-title">Full Stack Developer - Dabotics India Pvt Ltd</span></div>
+                    <div class="timeline-item"><span class="timeline-date">May 2024 - June 2025</span><span class="timeline-title">Backend Developer - Brillfy Technology</span></div>
+                    <div class="timeline-item"><span class="timeline-date">June 2025 - Present</span><span class="timeline-title">Software Developer - Blossoms Aroma Private Limited</span></div>
+                                </div>
+                            </div>
+        </section>
+        <!-- Projects Section -->
+        <section class="projects-section" id="projects">
+            <div class="glass card">
+                <h2>Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card"><div class="project-icon"><i class="fa fa-video"></i></div><h4>Video Management Software</h4><p>Secure video uploads, streaming, and analytics dashboard for content creators and educators.</p></div>
+                    <div class="project-card"><div class="project-icon"><i class="fa fa-utensils"></i></div><h4>Restaurant Web Application</h4><p>Online ordering, menu management, and real-time notifications for restaurants and customers.</p></div>
+                    <div class="project-card"><div class="project-icon"><i class="fa fa-users"></i></div><h4>Employee Management System</h4><p>HR automation, employee records, and reporting tools for organizations.</p></div>
+                    <div class="project-card"><div class="project-icon"><i class="fa fa-user-circle"></i></div><h4>Personal Portfolio</h4><p>Modern, responsive portfolio website to showcase my work and skills.</p></div>
+                    <div class="project-card"><div class="project-icon"><i class="fa fa-flask"></i></div><h4>Chemical Inventory App</h4><p>Inventory and safety management for laboratory chemicals and equipment.</p></div>
+                    </div>
+                </div>
+            </section>
+        <!-- Testimonials Section -->
+        <section class="testimonials-section" id="testimonials">
+            <div class="glass card">
+                <h2>Testimonials & Quotes</h2>
+                <div class="testimonial-list">
+                    <div class="testimonial-quote">
+                        <div class="testimonial-avatar"><i class="fas fa-user-tie"></i></div>
+                        <blockquote>"Gaurav's technical depth and attention to detail made a significant impact on our project success. Highly recommended!"</blockquote>
+                        <cite>- Senior Backend Lead, Brillfy Technology</cite>
+                    </div>
+                    <div class="testimonial-quote">
+                        <div class="testimonial-avatar"><i class="fas fa-user-friends"></i></div>
+                        <blockquote>"A true team player who always steps up to solve complex challenges and help others grow."</blockquote>
+                        <cite>- Peer Developer</cite>
+                    </div>
+                    <div class="testimonial-quote">
+                        <div class="testimonial-avatar"><i class="fas fa-user-graduate"></i></div>
+                        <blockquote>"Gaurav's ability to learn and adapt quickly is truly impressive. He brings fresh ideas to every discussion."</blockquote>
+                        <cite>- Project Mentor</cite>
+                    </div>
+                    <div class="testimonial-quote">
+                        <div class="testimonial-avatar"><i class="fas fa-quote-left"></i></div>
+                        <blockquote>"Success is not the key to happiness. Happiness is the key to success. If you love what you are doing, you will be successful."</blockquote>
+                        <cite>- Albert Schweitzer</cite>
+                    </div>
+                                    </div>
+                                </div>
+        </section>
+        <!-- Contact Section -->
+        <section class="contact-section" id="contact">
+            <div class="glass card">
+                <h2>Contact Me</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item"><i class="fa fa-phone"></i> <a href="tel:+917451967933">+91 7451967933</a></div>
+                        <div class="contact-item"><i class="fa fa-envelope"></i> <a href="mailto:gauravkmadhuaka@gmail.com">gauravkmadhuaka@gmail.com</a></div>
+                        <div class="contact-item"><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/gaurav-kuntal-276164257" target="_blank">LinkedIn</a></div>
+                        <div class="contact-item"><i class="fab fa-github"></i> <a href="https://github.com/kuntalgaurav2001" target="_blank">GitHub</a></div>
+                    </div>
+                    <form class="contact-form" action="mailto:gauravkmadhuaka@gmail.com" method="post" enctype="text/plain">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <input type="text" name="subject" placeholder="Subject" required>
+                        <textarea name="message" placeholder="Message" required></textarea>
+                        <button type="submit" class="btn primary-btn">Send Message</button>
+                    </form>
+                    </div>
+                </div>
+            </section>
+    </main>
+    <!-- Footer -->
+    <footer class="footer glass">
+        <div class="footer-content">
+            <div class="footer-social">
+                <a href="https://www.linkedin.com/in/gaurav-kuntal-276164257" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/kuntalgaurav2001" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="mailto:gauravkmadhuaka@gmail.com"><i class="fa fa-envelope"></i></a>
+            </div>
+            <div class="footer-copy">&copy; 2024 Gaurav Kumar Kuntal. All rights reserved.</div>
+        </div>
+    </footer>
+        <!-- ===== Style Switcher Start ===== -->
+        <div class="style-switcher">
+            <div class="style-switcher-toggler s-icon">
+                <i class="fas fa-cog fa-spin"></i>
+            </div>
+            <div class="day-night s-icon">
+                <i class="fas "></i>
+            </div>
+            <h4>Theme Colors</h4>
+            <div class="colors">
+                <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+                <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+                <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+                <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+                <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+            </div>
+        </div>
+        <!-- ===== Style Switcher End ===== -->
+        <!-- ===== JS Files ===== -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
+        <script src="js/script.js"></script>
+        <script src="js/style-switcher.js"></script>
+    <script>
+        var typed = new Typed('#typed', {
+            strings: [
+                'Full Stack Developer',
+                'Backend Specialist',
+                'React & Python Enthusiast',
+                'Cloud & API Engineer',
+                'Lifelong Learner'
+            ],
+            typeSpeed: 60,
+            backSpeed: 30,
+            backDelay: 1500,
+            loop: true
+        });
+        // Dark/Light Mode Toggle
+        const themeToggle = document.getElementById('theme-toggle');
+        themeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+            themeToggle.querySelector('i').classList.toggle('fa-moon');
+            themeToggle.querySelector('i').classList.toggle('fa-sun');
+        });
+        // Smooth scroll and active nav highlight
+        const navLinks = document.querySelectorAll('.navbar-links a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+        window.addEventListener('scroll', () => {
+            let fromTop = window.scrollY + 100;
+            navLinks.forEach(link => {
+                let section = document.querySelector(link.getAttribute('href'));
+                if (section && section.offsetTop <= fromTop && section.offsetTop + section.offsetHeight > fromTop) {
+                    navLinks.forEach(l => l.classList.remove('active'));
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
