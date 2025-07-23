@@ -197,29 +197,15 @@
                         <div class="contact-item"><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/gaurav-kuntal-276164257" target="_blank">LinkedIn</a></div>
                         <div class="contact-item"><i class="fab fa-github"></i> <a href="https://github.com/kuntalgaurav2001" target="_blank">GitHub</a></div>
                     </div>
-                    <form id="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
-  <input type="hidden" name="form-name" value="contact" />
-  
-  <!-- Anti-spam honeypot field -->
-  <p hidden>
-    <label>Don’t fill this out: <input name="bot-field" /></label>
-  </p>
-
-  <label>Your Name:<br />
-    <input type="text" name="name" required />
-  </label><br />
-
-  <label>Your Email:<br />
-    <input type="email" name="email" required />
-  </label><br />
-
-  <label>Your Message:<br />
-    <textarea name="message" required></textarea>
-  </label><br />
-
-  <button type="submit">Send</button>
-</form>
-
+                    <form class="contact-form" name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true" id="contact-form">
+                        <input type="hidden" name="form-name" value="contact" />
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <input type="text" name="subject" placeholder="Subject" required>
+                        <textarea name="message" placeholder="Message" required></textarea>
+                        <div data-netlify-recaptcha="true"></div>
+                        <button type="submit" class="btn primary-btn">Send Message</button>
+                    </form>
                     </div>
                 </div>
             </section>
