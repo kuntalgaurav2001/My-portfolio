@@ -31,3 +31,26 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+<script>
+  const form = document.getElementById('contact-form');
+
+  form.addEventListener('submit', async function (e) {
+    e.preventDefault(); // Stop default form redirect
+
+    const formData = new FormData(form);
+
+    try {
+      await fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(formData).toString()
+      });
+
+      alert("✅ Thank you for your message! I will get back to you shortly.");
+      form.reset();
+    } catch (error) {
+      alert("❌ Oops! Something went wrong. Please try again.");
+      console.error("Form error:", error);
+    }
+  });
+</script>
