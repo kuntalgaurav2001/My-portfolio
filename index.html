@@ -24,6 +24,8 @@
     <link rel="stylesheet" href="css/skins/color-4.css" class="alternate-style" title="color-4" disabled>
     <link rel="stylesheet" href="css/skins/color-5.css" class="alternate-style" title="color-5" disabled>
     <link rel="stylesheet" href="css/style-switcher.css">
+    <!-- EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </head>
 
 <body>
@@ -138,24 +140,166 @@
             <div class="glass card">
                 <h2>Experience</h2>
                 <div class="timeline-vertical">
-                    <div class="timeline-item"><span class="timeline-date">2023</span><span class="timeline-title">Web Developer Intern - Bharat Intern</span></div>
-                    <div class="timeline-item"><span class="timeline-date">2023</span><span class="timeline-title">Full Stack Developer - Dabotics India Pvt Ltd</span></div>
-                    <div class="timeline-item"><span class="timeline-date">May 2024 - June 2025</span><span class="timeline-title">Backend Developer - Brillfy Technology</span></div>
-                    <div class="timeline-item"><span class="timeline-date">June 2025 - Present</span><span class="timeline-title">Software Developer - Blossoms Aroma Private Limited</span></div>
-                                </div>
+                    <div class="timeline-item">
+                        <span class="timeline-date">June 2025 - Present</span>
+                        <div class="timeline-content">
+                            <h4 class="timeline-title">Software Developer - Blossoms Aroma Private Limited</h4>
+                            <div class="timeline-description">
+                                <p><strong>Key Responsibilities:</strong></p>
+                                <ul>
+                                    <li>Leading development of enterprise-level software solutions</li>
+                                    <li>Architecting scalable backend systems and microservices</li>
+                                    <li>Implementing advanced security features and data protection</li>
+                                    <li>Managing cloud infrastructure and deployment pipelines</li>
+                                    <li>Collaborating with stakeholders to define technical requirements</li>
+                                    <li>Driving innovation and best practices in software development</li>
+                                </ul>
+                                <p><strong>Technologies:</strong> Python, Django, FastAPI, React, AWS, Docker, Kubernetes, CI/CD</p>
                             </div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <span class="timeline-date">May 2024 - June 2025</span>
+                        <div class="timeline-content">
+                            <h4 class="timeline-title">Backend Developer - Brillfy Technology</h4>
+                            <div class="timeline-description">
+                                <p><strong>Key Responsibilities:</strong></p>
+                                <ul>
+                                    <li>Developed scalable backend systems using Python, Django, and FastAPI</li>
+                                    <li>Implemented real-time video streaming and management features</li>
+                                    <li>Integrated OpenCV and FFmpeg for video processing and analysis</li>
+                                    <li>Built secure authentication systems with JWT and encryption</li>
+                                    <li>Optimized database queries and implemented caching strategies</li>
+                                    <li>Mentored junior developers and conducted code reviews</li>
+                                </ul>
+                                <p><strong>Technologies:</strong> Python, Django, FastAPI, OpenCV, FFmpeg, WebSocket, Redis, PostgreSQL</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <span class="timeline-date">2023</span>
+                        <div class="timeline-content">
+                            <h4 class="timeline-title">Full Stack Developer - Dabotics India Pvt Ltd</h4>
+                            <div class="timeline-description">
+                                <p><strong>Key Responsibilities:</strong></p>
+                                <ul>
+                                    <li>Built end-to-end web applications using React.js and Django</li>
+                                    <li>Designed and implemented RESTful APIs for mobile and web clients</li>
+                                    <li>Managed database design and optimization for better performance</li>
+                                    <li>Implemented user authentication and authorization systems</li>
+                                    <li>Collaborated with cross-functional teams for project delivery</li>
+                                </ul>
+                                <p><strong>Technologies:</strong> React.js, Django, Django REST Framework, PostgreSQL, MySQL</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <span class="timeline-date">2023</span>
+                        <div class="timeline-content">
+                            <h4 class="timeline-title">Web Developer Intern - Bharat Intern</h4>
+                            <div class="timeline-description">
+                                <p><strong>Key Responsibilities:</strong></p>
+                                <ul>
+                                    <li>Developed responsive web applications using HTML, CSS, and JavaScript</li>
+                                    <li>Collaborated with team members on various web development projects</li>
+                                    <li>Learned modern web development practices and frameworks</li>
+                                    <li>Contributed to code reviews and debugging sessions</li>
+                                </ul>
+                                <p><strong>Technologies:</strong> HTML5, CSS3, JavaScript, Git</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         <!-- Projects Section -->
         <section class="projects-section" id="projects">
             <div class="glass card">
                 <h2>Projects</h2>
                 <div class="projects-grid">
-                    <div class="project-card"><div class="project-icon"><i class="fa fa-video"></i></div><h4>Video Management Software</h4><p>Secure video uploads, streaming, and analytics dashboard for content creators and educators.</p></div>
-                    <div class="project-card"><div class="project-icon"><i class="fa fa-utensils"></i></div><h4>Restaurant Web Application</h4><p>Online ordering, menu management, and real-time notifications for restaurants and customers.</p></div>
-                    <div class="project-card"><div class="project-icon"><i class="fa fa-users"></i></div><h4>Employee Management System</h4><p>HR automation, employee records, and reporting tools for organizations.</p></div>
-                    <div class="project-card"><div class="project-icon"><i class="fa fa-user-circle"></i></div><h4>Personal Portfolio</h4><p>Modern, responsive portfolio website to showcase my work and skills.</p></div>
-                    <div class="project-card"><div class="project-icon"><i class="fa fa-flask"></i></div><h4>Chemical Inventory App</h4><p>Inventory and safety management for laboratory chemicals and equipment.</p></div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="vms.jpeg" alt="Video Management Software" class="project-img">
+                        </div>
+                        <div class="project-content">
+                            <h4>Video Management Software</h4>
+                            <p>Secure video uploads, streaming, and analytics dashboard for content creators and educators.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Django</span>
+                                <span class="tech-tag">OpenCV</span>
+                                <span class="tech-tag">WebSocket</span>
+                            </div>
+                        </div>
                     </div>
+                    
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="rms.jpg" alt="Restaurant Web Application" class="project-img">
+                        </div>
+                        <div class="project-content">
+                            <h4>Restaurant Web Application</h4>
+                            <p>Online ordering, menu management, and real-time notifications for restaurants and customers.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Django</span>
+                                <span class="tech-tag">PostgreSQL</span>
+                                <span class="tech-tag">REST API</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="ems.jpeg" alt="Employee Management System" class="project-img">
+                        </div>
+                        <div class="project-content">
+                            <h4>Employee Management System</h4>
+                            <p>HR automation, employee records, and reporting tools for organizations.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Django</span>
+                                <span class="tech-tag">FastAPI</span>
+                                <span class="tech-tag">MySQL</span>
+                                <span class="tech-tag">Celery</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="p1.png" alt="Personal Portfolio" class="project-img">
+                        </div>
+                        <div class="project-content">
+                            <h4>Personal Portfolio</h4>
+                            <p>Modern, responsive portfolio website to showcase my work and skills.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">EmailJS</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="cms.png" alt="Chemical Inventory App" class="project-img">
+                        </div>
+                        <div class="project-content">
+                            <h4>Chemical Inventory App</h4>
+                            <p>Inventory and safety management for laboratory chemicals and equipment.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React Native</span>
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">PostgreSQL</span>
+                                <span class="tech-tag">FastAPI</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 </div>
             </section>
         <!-- Testimonials Section -->
@@ -197,15 +341,17 @@
                         <div class="contact-item"><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/gaurav-kuntal-276164257" target="_blank">LinkedIn</a></div>
                         <div class="contact-item"><i class="fab fa-github"></i> <a href="https://github.com/kuntalgaurav2001" target="_blank">GitHub</a></div>
                     </div>
-                    <form class="contact-form" name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true" id="contact-form">
-                        <input type="hidden" name="form-name" value="contact" />
-                        <input type="text" name="name" placeholder="Your Name" required>
-                        <input type="email" name="email" placeholder="Your Email" required>
-                        <input type="text" name="subject" placeholder="Subject" required>
-                        <textarea name="message" placeholder="Message" required></textarea>
-                        <div data-netlify-recaptcha="true"></div>
-                        <button type="submit" class="btn primary-btn">Send Message</button>
-                    </form>
+                    <div class="contact-form-section">
+                        <h3 class="contact-form-title">Contact Me</h3>
+                        <form class="contact-form" id="contact-form">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
+                            <input type="text" name="subject" placeholder="Subject" required>
+                            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                            <button type="submit" class="btn primary-btn">Send Message</button>
+                        </form>
+                        <div class="form-status" id="form-status"></div>
+                    </div>
                     </div>
                 </div>
             </section>
@@ -282,10 +428,79 @@
                 }
             });
         });
-        // Netlify form submission confirmation
+        // Initialize EmailJS
+        (function() {
+            emailjs.init("VgGYJ5iMGYwoQuPhW"); // Replace with your actual public key
+        })();
+
+        // Contact form submission with EmailJS
         const form = document.getElementById('contact-form');
-        form.addEventListener('submit', () => {
-            alert('Thank you for your message! I will get back to you soon.');
+        const formStatus = document.getElementById('form-status');
+        
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Show loading state
+            const submitBtn = this.querySelector('button[type="submit"]');
+            const originalText = submitBtn.textContent;
+            submitBtn.textContent = 'Sending...';
+            submitBtn.disabled = true;
+            
+            // Clear previous status
+            formStatus.innerHTML = '';
+            formStatus.className = 'form-status';
+            
+            // Get form data
+            const formData = {
+                name: this.querySelector('input[name="name"]').value,
+                email: this.querySelector('input[name="email"]').value,
+                subject: this.querySelector('input[name="subject"]').value,
+                message: this.querySelector('textarea[name="message"]').value
+            };
+            
+            // Send email using EmailJS with proper error handling
+            const templateParams = {
+                to_name: 'Gaurav',
+                to_email: 'gauravkmadhuaka@gmail.com',
+                from_name: formData.name,
+                from_email: formData.email,
+                subject: formData.subject,
+                message: formData.message,
+                reply_to: formData.email
+            };
+            
+            console.log('Sending email with params:', templateParams);
+            
+            // Send email with your service and template
+            emailjs.send('service_0wz3l4p', 'template_mfjih6d', templateParams)
+            .then(function(response) {
+                // Success
+                submitBtn.textContent = originalText;
+                submitBtn.disabled = false;
+                formStatus.innerHTML = '<div class="success-message"><i class="fas fa-check-circle"></i> Message sent successfully! I\'ll get back to you soon.</div>';
+                formStatus.className = 'form-status success';
+                form.reset();
+                
+                // Hide success message after 5 seconds
+                setTimeout(() => {
+                    formStatus.innerHTML = '';
+                    formStatus.className = 'form-status';
+                }, 5000);
+            })
+            .catch(function(error) {
+                // Error with detailed logging
+                console.error('EmailJS Error:', error);
+                submitBtn.textContent = originalText;
+                submitBtn.disabled = false;
+                formStatus.innerHTML = '<div class="error-message"><i class="fas fa-exclamation-circle"></i> Failed to send message. Error: ' + error.text + '</div>';
+                formStatus.className = 'form-status error';
+                
+                // Hide error message after 5 seconds
+                setTimeout(() => {
+                    formStatus.innerHTML = '';
+                    formStatus.className = 'form-status';
+                }, 5000);
+            });
         });
     </script>
 </body>
