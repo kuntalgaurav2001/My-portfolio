@@ -1,4 +1,16 @@
 document.addEventListener('DOMContentLoaded', function () {
+  // ========== GitHub Button Debugging ==========
+  const githubButtons = document.querySelectorAll('.github-btn');
+  console.log('Found GitHub buttons:', githubButtons.length);
+  
+  githubButtons.forEach((button, index) => {
+    console.log(`Button ${index + 1}:`, button.href);
+    button.addEventListener('click', function(e) {
+      console.log('GitHub button clicked:', this.href);
+      // Let the default link behavior happen
+    });
+  });
+
   // ========== Hamburger Menu ==========
   const hamburger = document.getElementById('navbar-hamburger');
   const navLinks = document.getElementById('navbar-links');
