@@ -73,4 +73,11 @@ MIT
 
 ---
 
+## 👨‍💻 Author
+**Gaurav Kumar Kuntal**
+- Portfolio: [GitHub](https://github.com/kuntalgaurav2001)
+- Email: gauravkmadhuaka@gmail.com
+
+---
+
 **Made with passion by Gaurav Kuntal**
