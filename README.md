@@ -69,7 +69,7 @@ This portfolio highlights my expertise as a Full Stack/Backend Developer, featur
 ---
 
 ## 📄 License
-MIT
+MIT License - see LICENSE file for details
 
 ---
 
