@@ -1580,6 +1580,257 @@ main {
     background: linear-gradient(45deg, transparent, rgba(255,255,255,0.3), transparent);
 }
 
+/* E-Commerce & CMS Projects Section */
+.ecommerce-projects-section {
+    position: relative;
+    background: var(--projects-bg);
+    background-size: 400% 400%;
+    animation: gradientShift 16s ease infinite;
+    margin-bottom: 32px;
+    overflow: hidden;
+}
+
+.ecommerce-projects-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--projects-gradient);
+    opacity: 0.4;
+    animation: wave 7s ease-in-out infinite;
+}
+
+.ecommerce-projects-section .card h2 {
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.ecommerce-projects-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 24px;
+}
+
+.ecommerce-project-card {
+    display: flex;
+    gap: 40px;
+    background: var(--bg-glass-light);
+    border-radius: 20px;
+    padding: 30px;
+    border: 1.5px solid var(--border-light);
+    box-shadow: 0 4px 24px rgba(44,62,80,0.10);
+    transition: all 0.3s ease;
+}
+
+body.dark-mode .ecommerce-project-card {
+    background: var(--bg-glass-dark);
+    border: 1.5px solid var(--border-dark);
+}
+
+.ecommerce-project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 40px rgba(44,62,80,0.15);
+    border-color: var(--accent-light);
+}
+
+body.dark-mode .ecommerce-project-card:hover {
+    border-color: var(--accent-dark);
+    box-shadow: 0 8px 40px rgba(0,0,0,0.3);
+}
+
+.ecommerce-project-visual {
+    flex: 0 0 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.device-mockup {
+    display: flex;
+    align-items: flex-end;
+    gap: 20px;
+    position: relative;
+}
+
+.device {
+    position: relative;
+    border-radius: 12px;
+    background: #1a1a1a;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+}
+
+.device:hover {
+    transform: translateY(-10px) scale(1.05);
+}
+
+.device-laptop {
+    width: 300px;
+    height: 190px;
+    border: 8px solid #1a1a1a;
+    border-bottom: 20px solid #1a1a1a;
+    border-radius: 8px;
+    z-index: 3;
+}
+
+.device-tablet {
+    width: 140px;
+    height: 180px;
+    border: 8px solid #1a1a1a;
+    border-radius: 12px;
+    z-index: 2;
+}
+
+.device-mobile {
+    width: 80px;
+    height: 160px;
+    border: 6px solid #1a1a1a;
+    border-radius: 16px;
+    z-index: 1;
+}
+
+.device-screen {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 4px;
+    background: #fff;
+}
+
+.project-preview-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.ecommerce-project-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 16px;
+}
+
+.project-type-tag {
+    display: inline-block;
+    background: linear-gradient(135deg, #ff6b9d, #c44569);
+    color: #fff;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 2px 8px rgba(196, 69, 105, 0.3);
+}
+
+.visit-site-btn {
+    display: inline-block;
+    padding: 10px 24px;
+    border: 2px solid #ff6b9d;
+    background: transparent;
+    color: #fff;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    letter-spacing: 0.5px;
+}
+
+.visit-site-btn:hover {
+    background: linear-gradient(135deg, #ff6b9d, #c44569);
+    border-color: #ff6b9d;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(255, 107, 157, 0.4);
+    color: #fff;
+}
+
+.project-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text-main-light);
+    margin: 0 0 8px 0;
+}
+
+body.dark-mode .project-title {
+    color: var(--text-main-dark);
+}
+
+.project-subtitle {
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 0 0 16px 0;
+    font-weight: 400;
+}
+
+body.dark-mode .project-subtitle {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.project-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.9);
+    margin: 0;
+}
+
+body.dark-mode .project-description {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Responsive Design for E-Commerce Section */
+@media (max-width: 900px) {
+    .ecommerce-project-card {
+        flex-direction: column;
+        gap: 24px;
+    }
+    
+    .ecommerce-project-visual {
+        flex: 0 0 auto;
+    }
+    
+    .device-mockup {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .device-laptop {
+        width: 250px;
+        height: 160px;
+    }
+    
+    .device-tablet {
+        width: 120px;
+        height: 150px;
+    }
+    
+    .device-mobile {
+        width: 70px;
+        height: 140px;
+    }
+    
+    .project-header {
+        flex-direction: column;
+        gap: 12px;
+        align-items: flex-start;
+    }
+    
+    .visit-site-btn {
+        align-self: flex-start;
+    }
+}
+
 /* Testimonials Section - Mint to Pink Gradient */
 .testimonials-section {
     position: relative;
