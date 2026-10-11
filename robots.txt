@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kuntalgaurav2001.github.io/My-portfolio/sitemap.xml

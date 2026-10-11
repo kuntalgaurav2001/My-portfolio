@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>KickVault Vendor Consignment Portal | Gaurav Kuntal</title>
+  <meta name="description" content="Full-stack demo of a B2B sneaker consignment portal: mock KYC, listings, MRNs, commission invoices, and real-time ops chat. Not a production product.">
+  <link rel="canonical" href="https://kuntalgaurav2001.github.io/My-portfolio/work/kickvault.html">
+  <meta property="og:title" content="KickVault Vendor Consignment Portal | Gaurav Kuntal">
+  <meta property="og:description" content="B2B sneaker consignment portal — KYC, listings, MRNs, invoices, and real-time ops chat. A public full-stack demo.">
+  <meta property="og:url" content="https://kuntalgaurav2001.github.io/My-portfolio/work/kickvault.html">
+  <meta property="og:type" content="article">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/site.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" data-header>
+    <div class="shell header-inner">
+      <a class="logo" href="../index.html"><span class="logo-mark" aria-hidden="true">GK</span><span class="logo-name">Gaurav Kuntal</span></a>
+      <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <span></span>
+      </button>
+      <nav id="site-nav" class="site-nav" data-nav>
+        <div class="nav-tabs">
+          <a href="../index.html#services">Services</a>
+          <a href="../index.html#work" aria-current="page">Work</a>
+          <a href="../index.html#process">Process</a>
+          <a href="../index.html#about">About</a>
+          <a href="../index.html#contact">Contact</a>
+        </div>
+        <a class="btn btn-primary nav-cta" href="../index.html?enquiry=Custom%20Web%20Application#contact">Start a Project</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main" class="section page-hero">
+    <div class="shell">
+      <a class="back-link" href="../index.html#experience">Back to professional work</a>
+      <p class="eyebrow">Professional experience — selected work</p>
+      <h1>KickVault Vendor Consignment Portal</h1>
+      <p class="lede">B2B sneaker consignment portal — KYC, listings, MRNs, invoices, and real-time ops chat.</p>
+      <p class="confidential">A public full-stack demo for a fictional company. Not a production product: payments, KYC, and usage in the app are simulated.</p>
+      <figure class="study-shot">
+        <div class="live-frame-wrap" data-live-frame>
+          <iframe src="https://kickvaultvendorportal.netlify.app/" title="KickVault vendor portal" loading="lazy" tabindex="-1" referrerpolicy="no-referrer"></iframe>
+        </div>
+      </figure>
+      <div class="study">
+        <article>
+          <h2><span>01 — Overview</span>Streetwear consignment, without the paperwork pile</h2>
+          <p>KickVault is a recruiter take-home for a fictional sneaker and streetwear company. The product line is “Streetwear consignment OS — Move product. Not paperwork.” Vendors register, complete a mock PAN KYC check, list sneakers, e-sign material receiving notes, and track commission invoices. Admins review listings, set prices, create MRNs and invoices, approve price and return requests, sync stock, and chat with vendors.</p>
+        </article>
+        <article>
+          <h2><span>02 — The problem</span>Consignment ops in separate steps</h2>
+          <p>Consignment work is fragmented. Vendors submit stock, operations prices and receives the goods with MRNs, then invoices settlements with commission. Without one shared record, there is no single audit trail for what was listed, received, sold, or returned.</p>
+        </article>
+        <article>
+          <h2><span>03 — What I built</span>One role-based portal</h2>
+          <p>The demo covers the path from KYC to a listing lifecycle, MRN e-sign, commission invoices and PDFs, returns and price requests, authenticated chat, and stock sync.</p>
+          <p>Vendors can register and log in, pass a mock PAN check in the AAAAA9999A pattern, and are blocked from creating listings until KYC is active. They can create and edit inventory, upload CSV or JSON in bulk, e-sign an MRN and download its PDF, open invoices and PDFs, request a price change or a return, see a payment summary, chat in real time, receive in-app notifications, and upload documents on a 5MB allow-list.</p>
+          <p>Admins can list vendors, review listings and set prices, create MRNs, create, send, or cancel invoices, approve or reject price and return requests, sync stock from CSV and a protected cron header (<code>x-cron-secret</code>), see sold value on a line chart, and use the same chat and notifications.</p>
+          <p>A listing moves submitted → priced → live → sold or returned. The API enforces which transitions are allowed.</p>
+        </article>
+        <article>
+          <h2><span>04 — Architecture</span>React, Django, Postgres, and Redis</h2>
+          <p>The React single-page app, built with Vite, talks REST and JWT to Django REST framework. WebSockets go to Django Channels. PostgreSQL holds the data. Redis backs Channels and Celery.</p>
+          <p>Login is email-based on a custom user with admin or vendor roles. A vendor profile is either pending KYC or active, and stores PAN and business name. Domain ids are string prefixes: SHOE-1001, MRN-2001, INV-3001, PR-4001, and RR-5001. Money is stored as Decimal. In the seeded data, 1 × ₹17,500 at 12% commission is ₹2,100 commission and ₹15,400 vendor settlement.</p>
+          <p>Vendors only see their own shoes, MRNs, invoices, chat, and notifications. That limit is enforced in querysets and object permissions, not only by frontend route guards. PDFs are WeasyPrint HTML templates, with a ReportLab fallback when system libraries are missing, which the slim Docker and Render setup needs. GitHub Actions runs the Django tests, the frontend production build, and the Docker image builds.</p>
+          <p>Open the live app on Netlify. The Render host is the API only and has no interface: https://vendor-consignment-portal.onrender.com</p>
+        </article>
+        <article>
+          <h2><span>05 — Highlights</span>What holds the demo together</h2>
+          <ul>
+            <li>Queryset scoping so each vendor only sees their own records</li>
+            <li>Decimal invoice math, including the seeded ₹17,500 commission example</li>
+            <li>PAN KYC gate before a vendor can create a listing</li>
+            <li>WebSocket chat with JWT auth and a room per vendor</li>
+            <li>PDF generation with a ReportLab fallback</li>
+            <li>Docker and GitHub Actions for tests, the frontend build, and images</li>
+            <li>Role-scoped login, JWT with PBKDF2, and a login throttle of 5 requests a minute per IP (429)</li>
+            <li>Cron protected by <code>x-cron-secret</code>, with CORS, DEBUG, and secrets set from the environment</li>
+          </ul>
+        </article>
+        <article>
+          <h2><span>06 — Technology</span>Stack used on this demo</h2>
+          <div class="tag-row">
+            <span>Django</span><span>DRF</span><span>SimpleJWT</span><span>Django Channels</span><span>Celery</span><span>PostgreSQL</span><span>Redis</span><span>React 18</span><span>Vite</span><span>React Router</span><span>Axios</span><span>Context API</span><span>Tailwind CSS</span><span>Recharts</span><span>WeasyPrint</span><span>ReportLab</span><span>Docker</span><span>GitHub Actions</span><span>Netlify</span><span>Render</span>
+          </div>
+        </article>
+        <article>
+          <h2><span>07 — Demo access</span>Seeded accounts</h2>
+          <p>All seeded users use the password <code>Passw0rd!</code></p>
+          <ul>
+            <li>Admin: admin@kickvault.test → /login/admin</li>
+            <li>Vendor, active (Alpha Kicks Co): vendor1@example.test → /login/vendor</li>
+            <li>Vendor, pending KYC (Beta Soles Co): vendor2@example.test → /login/vendor</li>
+          </ul>
+          <p>The first load can take about a minute if the Render free API has been idle.</p>
+        </article>
+      </div>
+      <p class="study-cta">
+        <a class="btn btn-primary" href="https://kickvaultvendorportal.netlify.app/" target="_blank" rel="noopener noreferrer">Live demo</a>
+        <a class="btn btn-secondary" href="https://github.com/kuntalgaurav2001/Vendor_Consignment_portal" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </p>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="shell">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <a class="logo" href="../index.html"><span class="logo-mark" aria-hidden="true">GK</span><span class="logo-name">Gaurav Kuntal</span></a>
+          <p>Full Stack Developer building websites, e-commerce stores and custom web applications.</p>
+          <a class="btn btn-primary footer-cta" href="../index.html#contact">Start a Project</a>
+        </div>
+        <div>
+          <p class="footer-label">Explore</p>
+          <ul class="footer-links">
+            <li><a href="../index.html#services">Services</a></li>
+            <li><a href="../index.html#work">Work</a></li>
+            <li><a href="../index.html#process">Process</a></li>
+            <li><a href="../index.html#about">About</a></li>
+            <li><a href="../index.html#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-label">Connect</p>
+          <ul class="footer-links">
+            <li><a href="mailto:gauravkmadhuaka@gmail.com">Email</a></li>
+            <li><a href="https://wa.me/917451967933" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+            <li><a href="https://www.linkedin.com/in/gauravkumarkuntal" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://github.com/kuntalgaurav2001" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bar">
+        <p class="copyright">© 2026 Gaurav Kuntal</p>
+        <p>Available for selected freelance projects.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="../js/main.js"></script>
+</body>
+</html>

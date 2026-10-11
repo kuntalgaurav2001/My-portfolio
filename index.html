@@ -1,760 +1,975 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Gaurav Portfolio</title>
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Main CSS -->
-    <link rel="stylesheet" href="css/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- ===== CSS Files ===== -->
-    <!-- > -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" 
-  href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
-    <link rel="stylesheet" href="css/skins/color-1.css">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- ====== Style Switcher ====== -->
-    <link rel="stylesheet" href="css/skins/color-1.css" class="alternate-style" title="color-1" disabled>
-    <link rel="stylesheet" href="css/skins/color-2.css" class="alternate-style" title="color-2" disabled>
-    <link rel="stylesheet" href="css/skins/color-3.css" class="alternate-style" title="color-3" disabled>
-    <link rel="stylesheet" href="css/skins/color-4.css" class="alternate-style" title="color-4" disabled>
-    <link rel="stylesheet" href="css/skins/color-5.css" class="alternate-style" title="color-5" disabled>
-    <link rel="stylesheet" href="css/style-switcher.css">
-    <!-- EmailJS -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gaurav Kuntal | Full Stack Developer | Websites, Shopify &amp; Web Applications</title>
+  <meta name="description" content="Freelance developer for business websites, Shopify stores, and custom applications. Share what you need built.">
+  <link rel="canonical" href="https://kuntalgaurav2001.github.io/My-portfolio/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Gaurav Kuntal | Full Stack Developer">
+  <meta property="og:description" content="Freelance developer for business websites, Shopify stores, and custom applications. Share what you need built.">
+  <meta property="og:url" content="https://kuntalgaurav2001.github.io/My-portfolio/">
+  <meta name="theme-color" content="#faf6ee">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://image.thum.io">
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/site.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Gaurav Kuntal",
+    "description": "Freelance developer for business websites, Shopify stores, and custom applications.",
+    "url": "https://kuntalgaurav2001.github.io/My-portfolio/",
+    "email": "gauravkmadhuaka@gmail.com",
+    "telephone": "+91-7451967933",
+    "image": "https://kuntalgaurav2001.github.io/My-portfolio/images/blossoms-aroma.jpg",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Mathura",
+      "addressCountry": "IN"
+    },
+    "sameAs": [
+      "https://github.com/kuntalgaurav2001",
+      "https://www.linkedin.com/in/gauravkumarkuntal"
+    ]
+  }
+  </script>
 </head>
-
 <body>
-    <!-- Top Navigation Bar -->
-    <header class="navbar glass">
-        <div class="navbar-logo">Gaurav Kuntal</div>
-        <button class="navbar-hamburger" id="navbar-hamburger" aria-label="Open navigation menu">
-            <span></span><span></span><span></span>
-        </button>
-        <nav class="navbar-links" id="navbar-links">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#experience">Experience</a>
-            <a href="#projects">Projects</a>
-            <a href="#testimonials">Testimonials</a>
-            <a href="#contact">Contact</a>
-        </nav>
-        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode"><i class="fas fa-moon"></i></button>
-    </header>
-    <!-- Mobile Navigation Bar -->
-    <nav class="mobile-navbar" id="mobile-navbar">
-        <a href="#home" title="Home"><i class="fa fa-home"></i><span>Home</span></a>
-        <a href="#about" title="About"><i class="fa fa-user"></i><span>About</span></a>
-        <a href="#skills" title="Skills"><i class="fa fa-cogs"></i><span>Skills</span></a>
-        <a href="#experience" title="Experience"><i class="fa fa-briefcase"></i><span>Experience</span></a>
-        <a href="#projects" title="Projects"><i class="fa fa-folder-open"></i><span>Projects</span></a>
-        <a href="#testimonials" title="Testimonials"><i class="fa fa-quote-right"></i><span>Testimonials</span></a>
-        <a href="#contact" title="Contact"><i class="fa fa-envelope"></i><span>Contact</span></a>
-    </nav>
-    <main>
-        <!-- Hero Section -->
-        <section class="hero-section" id="home">
-            <!-- Background Image Overlays -->
-            <div class="bg-overlay hero-bg"></div>
-            <div class="bg-image-overlay hero-img"></div>
-            <!-- Particle Effects -->
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="glass hero-card">
-                <div class="profile-frame profile-frame-circle">
-                    <span class="sparkle sparkle1"></span>
-                    <span class="sparkle sparkle2"></span>
-                    <span class="sparkle sparkle3"></span>
-                    <img src="myself.png" alt="Gaurav Kumar Kuntal" class="profile-img profile-img-circle">
-                </div>
-                <h1>Hello, I'm <span class="highlight">Gaurav Kumar Kuntal</span></h1>
-                <h2><span id="typed"></span></h2>
-                <p>Passionate Backend Developer with hands-on experience in building robust and scalable web applications. Specialized in Python, Django, Django REST Framework, and FastAPI for RESTful APIs and backend systems. Experienced in real-time video management, encryption, authentication, and cloud technologies.</p>
-                <a href="#contact" class="btn primary-btn">Hire Me</a>
-            </div>
-        </section>
-        <!-- About Section -->
-        <section class="about-section" id="about">
-            <!-- Background Image Overlays -->
-            <div class="bg-overlay about-bg"></div>
-            <div class="bg-image-overlay tech-img"></div>
-            <!-- Floating Elements -->
-            <div class="floating-element"></div>
-            <div class="floating-element"></div>
-            <div class="glass card">
-                <h2>About Me</h2>
-                <p style="margin-bottom: 0.5em;">
-                    <span style="font-size:1.3em;"></span> Hi, I'm <b>Gaurav Kuntal</b> a FullStack Developer passionate about building scalable, secure, and real-time web applications.
-                </p>
-                <div style="margin-bottom: 0.7em;"><b>Expertise:</b></div>
-                <ul style="margin-top:0; margin-bottom:0.7em;">
-                    <li> Python, Django, Django REST Framework, FastAPI</li>
-                    <li> RESTful API design & backend architecture</li>
-                    <li> Database design (PostgreSQL, MySQL, SQLite)</li>
-                    <li> Authentication, authorization, and security best practices</li>
-                </ul>
-                <div style="margin:1em 0 0.7em 0;"><b>Highlighted Projects:</b></div>
-                <ul style="margin-top:0; margin-bottom:0.7em;">
-                    <li><b>Video Management Software:</b> Real-time IP camera streaming, OpenCV, FFmpeg, WebSocket, RTSP, AES-256 encryption, JWT authentication, secure playback, PostgreSQL, SHA-256.</li>
-                    <li> <b>Restaurant Web Application:</b> React.js frontend, Django backend, dynamic menu, table booking, customer feedback, role-based access, REST APIs.</li>
-                    <li><b>Employee Management System:</b> Automated HR (onboarding, attendance, payroll), secure authentication, modular APIs, optimized databases.</li>
-            </ul>
-                <p style="margin-top:1em;">
-                    <span style="font-size:1.1em;"></span> I thrive on solving real-world problems and continuously learning new technologies. Let's build something amazing together!
-                </p>
-                <div class="about-info-row">
-                    <span><i class="fa fa-envelope"></i> gauravkmadhuaka@gmail.com</span>
-                    <span><i class="fa fa-phone"></i> +91 7451967933</span>
-                    <span><i class="fa fa-map-marker-alt"></i> Mathura</span>
-                        </div>
-                <a href="GAURAV_K_RESUME.pdf" class="btn secondary-btn" download><i class="fa fa-download"></i> Download CV</a>
-                </div>
-				</section>
-        <!-- Skills Section -->
-        <section class="skills-section" id="skills">
-            <!-- Background Image Overlays -->
-            <div class="bg-overlay skills-bg"></div>
-            <div class="bg-image-overlay code-img"></div>
-            <!-- Cyber Elements -->
-            <div class="cyber-element"></div>
-            <div class="cyber-element"></div>
-            <div class="glass card">
-                <h2>Technical Skills</h2>
-                <div class="skills-grid">
-                    <div class="skill-card"><i class="fab fa-python"></i><span>Python</span></div>
-                    <div class="skill-card"><i class="fab fa-python"></i><span>Django</span></div>
-                    <div class="skill-card"><i class="fas fa-link"></i><span>Django REST Framework</span></div>
-                    <div class="skill-card"><i class="fas fa-plug"></i><span>REST API</span></div>
-                    <div class="skill-card"><i class="fas fa-bolt"></i><span>FastAPI</span></div>
-                    <div class="skill-card"><i class="fab fa-react"></i><span>React</span></div>
-                    <div class="skill-card"><i class="fab fa-html5"></i><span>HTML5</span></div>
-                    <div class="skill-card"><i class="fab fa-css3-alt"></i><span>CSS3</span></div>
-                    <div class="skill-card"><i class="fab fa-js"></i><span>JavaScript</span></div>
-                    <div class="skill-card"><i class="fas fa-database"></i><span>MySQL</span></div>
-                    <div class="skill-card"><i class="fab fa-docker"></i><span>Docker</span></div>
-                    <div class="skill-card"><i class="fab fa-aws"></i><span>AWS</span></div>
-                    <div class="skill-card"><i class="fab fa-react"></i><span>React Native</span></div>
-                    <div class="skill-card"><i class="fas fa-database"></i><span>PostgreSQL</span></div>
-                    <div class="skill-card"><i class="fas fa-database"></i><span>SQLite</span></div>
-                    <div class="skill-card"><i class="fas fa-code"></i><span>C Language (Basic)</span></div>
-                    <div class="skill-card"><i class="fas fa-code"></i><span>C++</span></div>
-                    <div class="skill-card"><i class="fab fa-java"></i><span>Java & OOPs Concept</span></div>
-                    <div class="skill-card"><i class="fas fa-memory"></i><span>Redis</span></div>
-                    <div class="skill-card"><i class="fas fa-tasks"></i><span>Celery</span></div>
-                    <div class="skill-card"><i class="fas fa-search"></i><span>Web Scraping</span></div>
-                    <div class="skill-card"><i class="fas fa-camera"></i><span>OpenCV</span></div>
-                    <div class="skill-card"><i class="fas fa-film"></i><span>FFmpeg</span></div>
-                    <div class="skill-card"><i class="fas fa-exchange-alt"></i><span>WebSocket</span></div>
-                    <div class="skill-card"><i class="fab fa-wordpress"></i><span>WordPress</span></div>
-                    <div class="skill-card"><i class="fab fa-shopify"></i><span>Shopify</span></div>
-                    <div class="skill-card"><i class="fab fa-php"></i><span>PHP</span></div>
-                        </div>
-                    </div>
-        </section>
-        <!-- Experience Section -->
-        <section class="experience-section" id="experience">
-            <!-- Background Image Overlays -->
-            <div class="bg-overlay experience-bg"></div>
-            <div class="bg-image-overlay tech-img"></div>
-            <div class="glass card">
-                <h2>Experience</h2>
-                <div class="timeline-vertical">
-                    <div class="timeline-item">
-                        <span class="timeline-date">June 2025 - Present</span>
-                        <div class="timeline-content">
-                            <h4 class="timeline-title">Software Developer - Blossoms Aroma Private Limited</h4>
-                            <div class="timeline-description">
-                                <p><strong>Key Responsibilities:</strong></p>
-                                <ul>
-                                    <li> Leading development of enterprise-level software solutions</li>
-                                    <li>Architecting scalable backend systems and microservices</li>
-                                    <li>Implementing advanced security features and data protection</li>
-                                    <li>Managing cloud infrastructure and deployment pipelines</li>
-                                    <li>Collaborating with stakeholders to define technical requirements</li>
-                                    <li>Driving innovation and best practices in software development</li>
-                                </ul>
-                                <p><strong>Technologies:</strong> Python, Django, FastAPI, React, AWS, Docker, Kubernetes, CI/CD</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="timeline-item">
-                        <span class="timeline-date">May 2024 - June 2025</span>
-                        <div class="timeline-content">
-                            <h4 class="timeline-title">Backend Developer - Brillfy Technology</h4>
-                            <div class="timeline-description">
-                                <p><strong>Key Responsibilities:</strong></p>
-                                <ul>
-                                    <li>Developed scalable backend systems using Python, Django, and FastAPI</li>
-                                    <li>Implemented real-time video streaming and management features</li>
-                                    <li>Integrated OpenCV and FFmpeg for video processing and analysis</li>
-                                    <li>Built secure authentication systems with JWT and encryption</li>
-                                    <li>Optimized database queries and implemented caching strategies</li>
-                                    <li>Mentored junior developers and conducted code reviews</li>
-                                </ul>
-                                <p><strong>Technologies:</strong> Python, Django, FastAPI, OpenCV, FFmpeg, WebSocket, Redis, PostgreSQL</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="timeline-item">
-                        <span class="timeline-date">2023</span>
-                        <div class="timeline-content">
-                            <h4 class="timeline-title">Full Stack Developer - Dabotics India Pvt Ltd</h4>
-                            <div class="timeline-description">
-                                <p><strong>Key Responsibilities:</strong></p>
-                                <ul>
-                                    <li>Built end-to-end web applications using React.js and Django</li>
-                                    <li>Designed and implemented RESTful APIs for mobile and web clients</li>
-                                    <li>Managed database design and optimization for better performance</li>
-                                    <li>Implemented user authentication and authorization systems</li>
-                                    <li>Collaborated with cross-functional teams for project delivery</li>
-                                </ul>
-                                <p><strong>Technologies:</strong> React.js, Django, Django REST Framework, PostgreSQL, MySQL</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="timeline-item">
-                        <span class="timeline-date">2023</span>
-                        <div class="timeline-content">
-                            <h4 class="timeline-title">Web Developer Intern - Bharat Intern</h4>
-                            <div class="timeline-description">
-                                <p><strong>Key Responsibilities:</strong></p>
-                                <ul>
-                                    <li>Developed responsive web applications using HTML, CSS, and JavaScript</li>
-                                    <li>Collaborated with team members on various web development projects</li>
-                                    <li>Learned modern web development practices and frameworks</li>
-                                    <li>Contributed to code reviews and debugging sessions</li>
-                                </ul>
-                                <p><strong>Technologies:</strong> HTML5, CSS3, JavaScript, Git</p>
-                            </div>
-                        </div>
-                    </div>
-                                </div>
-                            </div>
-        </section>
-        <!-- Projects Section -->
-        <section class="projects-section" id="projects">
-            <!-- Background Image Overlays -->
-            <div class="bg-overlay projects-bg"></div>
-            <div class="bg-image-overlay code-img"></div>
-            <div class="glass card">
-                <h2>Projects</h2>
-                <div class="projects-grid">
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="vms.jpeg" alt="Video Management Software" class="project-img">
-                        </div>
-                        <div class="project-content">
-                            <h4>Video Management Software</h4>
-                            <p>Secure video uploads, streaming, and analytics dashboard for content creators and educators.</p>
-                            <div class="project-tech">
-                                <span class="tech-tag">Python</span>
-                                <span class="tech-tag">Django</span>
-                                <span class="tech-tag">OpenCV</span>
-                                <span class="tech-tag">WebSocket</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://github.com/kuntalgaurav2001" target="_blank" class="github-btn">
-                                    <i class="fab fa-github"></i> View Profile
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="rms.jpg" alt="Restaurant Web Application" class="project-img">
-                        </div>
-                        <div class="project-content">
-                            <h4>Restaurant Web Application</h4>
-                            <p>Online ordering, menu management, and real-time notifications for restaurants and customers.</p>
-                            <div class="project-tech">
-                                <span class="tech-tag">React</span>
-                                <span class="tech-tag">Django</span>
-                                <span class="tech-tag">PostgreSQL</span>
-                                <span class="tech-tag">REST API</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://github.com/kuntalgaurav2001/restaurant_web_application" target="_blank" class="github-btn">
-                                    <i class="fab fa-github"></i> View on GitHub
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="ems.jpeg" alt="Employee Management System" class="project-img">
-                        </div>
-                        <div class="project-content">
-                            <h4>Employee Management System</h4>
-                            <p>HR automation, employee records, and reporting tools for organizations.</p>
-                            <div class="project-tech">
-                                <span class="tech-tag">Django</span>
-                                <span class="tech-tag">FastAPI</span>
-                                <span class="tech-tag">MySQL</span>
-                                <span class="tech-tag">Celery</span>
-                            </div>
-                            <div class="project-links">
-                                                                <a href="https://github.com/kuntalgaurav2001/Employee_management_system" target="_blank" class="github-btn">
-                                    <i class="fab fa-github"></i> View on GitHub
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="p1.png" alt="Personal Portfolio" class="project-img">
-                        </div>
-                        <div class="project-content">
-                            <h4>Personal Portfolio</h4>
-                            <p>Modern, responsive portfolio website to showcase my work and skills.</p>
-                            <div class="project-tech">
-                                <span class="tech-tag">HTML5</span>
-                                <span class="tech-tag">CSS3</span>
-                                <span class="tech-tag">JavaScript</span>
-                                <span class="tech-tag">EmailJS</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://github.com/kuntalgaurav2001/My-portfolio" target="_blank" class="github-btn">
-                                    <i class="fab fa-github"></i> View on GitHub
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="cms.png" alt="Chemical Inventory App" class="project-img">
-                        </div>
-                        <div class="project-content">
-                            <h4>Chemical Inventory App</h4>
-                            <p>Inventory and safety management for laboratory chemicals and equipment.</p>
-                            <div class="project-tech">
-                                <span class="tech-tag">React Native</span>
-                                <span class="tech-tag">Python</span>
-                                <span class="tech-tag">PostgreSQL</span>
-                                <span class="tech-tag">FastAPI</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://github.com/kuntalgaurav2001" target="_blank" class="github-btn">
-                                    <i class="fab fa-github"></i> View Profile
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="s1.png" alt="Blog Website" class="project-img">
-                        </div>
-                        <div class="project-content">
-                            <h4>Blog Website</h4>
-                            <p>Full-featured blog platform with user authentication, content management, and SEO optimization.</p>
-                            <div class="project-tech">
-                                <span class="tech-tag">Django</span>
-                                <span class="tech-tag">Python</span>
-                                <span class="tech-tag">Next.js</span>
-                                <span class="tech-tag">Tailwind CSS</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://github.com/kuntalgaurav2001/Blog_website" target="_blank" class="github-btn">
-                                    <i class="fab fa-github"></i> View on GitHub
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="todo.png" alt="Todo App" class="project-img">
-                        </div>
-                        <div class="project-content">
-                            <h4>Todo App</h4>
-                            <p>Interactive task management application with real-time updates, categories, and progress tracking.</p>
-                            <div class="project-tech">
-                                <span class="tech-tag">HTML</span>
-                                <span class="tech-tag">CSS</span>
-                                <span class="tech-tag">JavaScript</span>
-                                <span class="tech-tag">Python</span>
-                                <span class="tech-tag">SQLite</span>
-                                <span class="tech-tag">Django</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://github.com/kuntalgaurav2001/Todo-App" target="_blank" class="github-btn">
-                                    <i class="fab fa-github"></i> View on GitHub
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="m1s.png" alt="AI Meeting Summarizer" class="project-img">
-                        </div>
-                        <div class="project-content">
-                            <h4>AI Meeting Summarizer</h4>
-                            <p>Intelligent tool that transcribes, analyzes, and generates comprehensive summaries of meeting recordings.</p>
-                            <div class="project-tech">
-                                <span class="tech-tag">Python</span>
-                                <span class="tech-tag">OpenAI API</span>
-                                <span class="tech-tag">Django</span>
-                                <span class="tech-tag">Django REST Framework</span>
-                                <span class="tech-tag">WebRTC</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://github.com/kuntalgaurav2001/AI-Meeting-summarizer" target="_blank" class="github-btn">
-                                    <i class="fab fa-github"></i> View on GitHub
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="k1.png" alt="Process Monitor Agent" class="project-img">
-                        </div>
-                        <div class="project-content">
-                            <h4>Process Monitor Agent</h4>
-                            <p>System monitoring agent that tracks performance metrics, logs, and alerts for infrastructure management.</p>
-                            <div class="project-tech">
-                                <span class="tech-tag">Python</span>
-                                <span class="tech-tag">HTML</span>
-                                <span class="tech-tag">CSS</span>
-                                <span class="tech-tag">Django</span>
-                                <span class="tech-tag">Django REST Framework</span> 
-                                <span class="tech-tag">Rest API</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://github.com/kuntalgaurav2001/PROCESS-MONITOR-AGENT" target="_blank" class="github-btn">
-                                    <i class="fab fa-github"></i> View on GitHub
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-            </section>
-        <!-- Shopify & WordPress Projects Section -->
-        <section class="ecommerce-projects-section" id="ecommerce-projects">
-            <!-- Background Image Overlays -->
-            <div class="bg-overlay projects-bg"></div>
-            <div class="bg-image-overlay code-img"></div>
-            <div class="glass card">
-                <h2>E-Commerce & CMS Projects</h2>
-                <div class="ecommerce-projects-container">
-                    <!-- Project template - You can duplicate this for each project -->
-                    <div class="ecommerce-project-card">
-                        <div class="ecommerce-project-visual">
-                            <div class="device-mockup">
-                                <div class="device device-laptop">
-                                    <div class="device-screen">
-                                        <img src="blossomsaroma.png" alt="Blossoms Aroma Project Preview" class="project-preview-img">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="ecommerce-project-content">
-                            <div class="project-header">
-                                <span class="project-type-tag">Project</span>
-                                <a href="https://blossomsaroma.com/" target="_blank" class="visit-site-btn">VISIT SITE</a>
-                            </div>
-                            <h3 class="project-title">Blossoms Aroma</h3>
-                            <p class="project-subtitle">Fragrance & Essential Oils Brand</p>
-                            <p class="project-description">Premium perfumes, essential oils, and aromatic blends showcased with an elegant, modern design and smooth shopping experience.</p>
-                        </div>
-                    </div>
-                    
-                    <!-- Project Card 2 -->
-                    <div class="ecommerce-project-card">
-                        <div class="ecommerce-project-visual">
-                            <div class="device-mockup">
-                                <div class="device device-laptop">
-                                    <div class="device-screen">
-                                        <img src="akshatvastu.png" alt="Project Preview" class="project-preview-img">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="ecommerce-project-content">
-                            <div class="project-header">
-                                <span class="project-type-tag">Project</span>
-                                <a href="https://akshatvastu.com/" target="_blank" class="visit-site-btn">VISIT SITE</a>
-                            </div>
-                            <h3 class="project-title">Akshat Vastu</h3>
-                            <p class="project-subtitle">Vastu Shastra & Consultation</p>
-                            <p class="project-description">Personalized Vastu guidance with serene design, easy navigation, and informative sections focused on harmony and balanced living.</p>
-                        </div>
-                    </div>
-                    
-                    <!-- Project Card 3 -->
-                    <div class="ecommerce-project-card">
-                        <div class="ecommerce-project-visual">
-                            <div class="device-mockup">
-                                <div class="device device-laptop">
-                                    <div class="device-screen">
-                                        <img src="americanaroma.png" alt="Project Preview" class="project-preview-img">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="ecommerce-project-content">
-                            <div class="project-header">
-                                <span class="project-type-tag">Project</span>
-                                <a href="https://americanaroma.co/" target="_blank" class="visit-site-btn">VISIT SITE</a>
-                            </div>
-                            <h3 class="project-title">American Aroma</h3>
-                            <p class="project-subtitle">Luxury Perfume & Lifestyle Brand</p>
-                            <p class="project-description">High-end fragrance collection with a refined layout, immersive visuals, and seamless user navigation for a premium shopping feel.</p>
-                        </div>
-                    </div>
-                    
-                    <!-- Project Card 4 -->
-                    <div class="ecommerce-project-card">
-                        <div class="ecommerce-project-visual">
-                            <div class="device-mockup">
-                                <div class="device device-laptop">
-                                    <div class="device-screen">
-                                        <img src="houseofozo.png" alt="Project Preview" class="project-preview-img">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="ecommerce-project-content">
-                            <div class="project-header">
-                                <span class="project-type-tag">Project</span>
-                                <a href="https://houseofozo.com/" target="_blank" class="visit-site-btn">VISIT SITE</a>
-                            </div>
-                            <h3 class="project-title">House Of Ozo</h3>
-                            <p class="project-subtitle">Perfume & Home Fragrance Store</p>
-                            <p class="project-description">Curated scents and home fragrances presented through a minimal, sensory-driven interface focused on elegance and easy exploration.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Testimonials Section -->
-        <section class="testimonials-section" id="testimonials">
-            <!-- Background Image Overlays -->
-            <div class="bg-overlay testimonials-bg"></div>
-            <div class="bg-image-overlay hero-img"></div>
-            <div class="glass card">
-                <h2>Testimonials & Quotes</h2>
-                <div class="testimonial-list">
-                    <div class="testimonial-quote">
-                        <div class="testimonial-avatar"><i class="fas fa-user-tie"></i></div>
-                        <blockquote>"Gaurav's technical depth and attention to detail made a significant impact on our project success. Highly recommended!"</blockquote>
-                        <cite>- Senior Backend Lead, Brillfy Technology</cite>
-                    </div>
-                    <div class="testimonial-quote">
-                        <div class="testimonial-avatar"><i class="fas fa-user-friends"></i></div>
-                        <blockquote>"A true team player who always steps up to solve complex challenges and help others grow."</blockquote>
-                        <cite>- Peer Developer</cite>
-                    </div>
-                    <div class="testimonial-quote">
-                        <div class="testimonial-avatar"><i class="fas fa-user-graduate"></i></div>
-                        <blockquote>"Gaurav's ability to learn and adapt quickly is truly impressive. He brings fresh ideas to every discussion."</blockquote>
-                        <cite>- Project Mentor</cite>
-                    </div>
-                    <div class="testimonial-quote">
-                        <div class="testimonial-avatar"><i class="fas fa-quote-left"></i></div>
-                        <blockquote>"Success is not the key to happiness. Happiness is the key to success. If you love what you are doing, you will be successful."</blockquote>
-                        <cite>- Albert Schweitzer</cite>
-                    </div>
-                                    </div>
-                                </div>
-        </section>
-        <!-- Contact Section -->
-        <section class="contact-section" id="contact">
-            <!-- Background Image Overlays -->
-            <div class="bg-overlay contact-bg"></div>
-            <div class="bg-image-overlay tech-img"></div>
-            <div class="glass card">
-                <h2>Contact Me</h2>
-                <div class="contact-content">
-                    <div class="contact-info">
-                        <div class="contact-item"><i class="fa fa-phone"></i> <a href="tel:+917451967933">+91 7451967933</a></div>
-                        <div class="contact-item"><i class="fa fa-envelope"></i> <a href="mailto:gauravkmadhuaka@gmail.com">gauravkmadhuaka@gmail.com</a></div>
-                        <div class="contact-item"><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/gauravkumarkuntal" target="_blank">LinkedIn</a></div>
-                        <div class="contact-item"><i class="fab fa-github"></i> <a href="https://github.com/kuntalgaurav2001" target="_blank">GitHub</a></div>
-                    </div>
-                    <div class="contact-form-section">
-                        <h3 class="contact-form-title">Contact Me</h3>
-                        <form class="contact-form" id="contact-form">
-                        <input type="text" name="name" placeholder="Your Name" required>
-                        <input type="email" name="email" placeholder="Your Email" required>
-                        <input type="text" name="subject" placeholder="Subject" required>
-                            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-                        <button type="submit" class="btn primary-btn">Send Message</button>
-                    </form>
-                        <div class="form-status" id="form-status"></div>
-                    </div>
-                    </div>
-                </div>
-            </section>
-    </main>
-    <!-- Footer -->
-    <footer class="footer glass">
-        <div class="footer-content">
-            <div class="footer-social">
-                <a href="https://www.linkedin.com/in/gauravkumarkuntal" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/kuntalgaurav2001" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="mailto:gauravkmadhuaka@gmail.com"><i class="fa fa-envelope"></i></a>
-            </div>
-            <div class="footer-copy">&copy; 2024 Gaurav Kumar Kuntal. All rights reserved.</div>
+  <div class="welcome" data-welcome>
+    <video class="welcome-video" muted loop playsinline preload="auto" aria-hidden="true">
+      <source src="14519236_3840_2160_60fps.mp4" type="video/mp4">
+    </video>
+    <div class="welcome-shade" aria-hidden="true"></div>
+    <div class="welcome-top">
+      <p class="welcome-brand"><span class="welcome-mark" aria-hidden="true">GK</span><span>Gaurav Kuntal</span></p>
+      <a class="welcome-mail" href="mailto:gauravkmadhuaka@gmail.com">gauravkmadhuaka@gmail.com</a>
+      <nav class="welcome-nav" aria-label="Welcome">
+        <a href="#services">Services</a>
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+    <div class="welcome-scene">
+      <div class="welcome-intro">
+        <p class="welcome-hello">Hello, I'm</p>
+        <p class="welcome-name">Gaurav<br>Kuntal</p>
+      </div>
+      <div class="welcome-orb" aria-hidden="true"><span>GK</span></div>
+      <p class="welcome-role"><span>Full-stack</span>Developer</p>
+    </div>
+    <ul class="welcome-socials">
+      <li><a href="mailto:gauravkmadhuaka@gmail.com" aria-label="Email">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v12H4z" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M4 7l8 6 8-6" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+      </a></li>
+      <li><a href="https://wa.me/917451967933" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 18.5l.8-2.8A7.2 7.2 0 1 1 9.2 19L6 18.5z" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M9.2 10.2c.2 1.6 1.8 3.1 3.4 3.4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+      </a></li>
+      <li><a href="https://www.linkedin.com/in/gauravkumarkuntal" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="9" width="3.2" height="10" fill="currentColor"/><circle cx="5.6" cy="6" r="1.6" fill="currentColor"/><path d="M11 19V9h3v1.4A3.4 3.4 0 0 1 17.2 9H19v10h-3.2v-5.2c0-1.2-.6-2-1.7-2s-1.6.8-1.6 2V19H11z" fill="currentColor"/></svg>
+      </a></li>
+      <li><a href="https://github.com/kuntalgaurav2001" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4a8 8 0 0 0-2.5 15.6c.4.1.5-.2.5-.4v-1.5c-2.2.5-2.7-1-2.7-1-.4-.9-.9-1.2-.9-1.2-.7-.5.1-.5.1-.5.8.1 1.2.8 1.2.8.7 1.2 1.9.9 2.3.7.1-.5.3-.9.5-1.1-1.8-.2-3.6-.9-3.6-3.9 0-.9.3-1.6.8-2.1-.1-.2-.3-1 .1-2.1 0 0 .7-.2 2.2.8a7.6 7.6 0 0 1 4 0c1.5-1 2.2-.8 2.2-.8.4 1.1.2 1.9.1 2.1.5.5.8 1.2.8 2.1 0 3-1.8 3.7-3.6 3.9.3.3.6.8.6 1.6v2.4c0 .2.1.5.5.4A8 8 0 0 0 12 4z" fill="currentColor"/></svg>
+      </a></li>
+    </ul>
+    <a class="welcome-resume" href="GAURAV_K_RESUME.pdf" download>Resume</a>
+  </div>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" data-header>
+    <div class="shell header-inner">
+      <a class="logo" href="#top"><span class="logo-mark" aria-hidden="true">GK</span><span class="logo-name">Gaurav Kuntal</span></a>
+      <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <span></span>
+      </button>
+      <nav id="site-nav" class="site-nav" data-nav>
+        <div class="nav-tabs">
+          <a href="#services">Services</a>
+          <a href="#work">Work</a>
+          <a href="#process">Process</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
         </div>
-    </footer>
-        <!-- ===== Style Switcher Start ===== -->
-        <div class="style-switcher">
-            <div class="style-switcher-toggler s-icon">
-                <i class="fas fa-cog fa-spin"></i>
-            </div>
-            <div class="day-night s-icon">
-                <i class="fas "></i>
-            </div>
-            <h4>Theme Colors</h4>
-            <div class="colors">
-                <span class="color-1" onclick="setActiveStyle('color-1')"></span>
-                <span class="color-2" onclick="setActiveStyle('color-2')"></span>
-                <span class="color-3" onclick="setActiveStyle('color-3')"></span>
-                <span class="color-4" onclick="setActiveStyle('color-4')"></span>
-                <span class="color-5" onclick="setActiveStyle('color-5')"></span>
-            </div>
-        </div>
-        <!-- ===== Style Switcher End ===== -->
-        <!-- ===== JS Files ===== -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
-        <script src="js/script.js"></script>
-        <script src="js/style-switcher.js"></script>
-    <script>
-        var typed = new Typed('#typed', {
-            strings: [
-                'Full Stack Developer',
-                'Backend Specialist',
-                'React & Python Enthusiast',
-                'Cloud & API Engineer',
-                'Lifelong Learner'
-            ],
-            typeSpeed: 60,
-            backSpeed: 30,
-            backDelay: 1500,
-            loop: true
-        });
-        // Dark/Light Mode Toggle
-        const themeToggle = document.getElementById('theme-toggle');
-        themeToggle.addEventListener('click', () => {
-            document.body.classList.toggle('dark-mode');
-            themeToggle.querySelector('i').classList.toggle('fa-moon');
-            themeToggle.querySelector('i').classList.toggle('fa-sun');
-        });
-        // Smooth scroll and active nav highlight
-        const navLinks = document.querySelectorAll('.navbar-links a');
-        navLinks.forEach(link => {
-            link.addEventListener('click', function(e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
-            });
-        });
-        window.addEventListener('scroll', () => {
-            let fromTop = window.scrollY + 100;
-            navLinks.forEach(link => {
-                let section = document.querySelector(link.getAttribute('href'));
-                if (section && section.offsetTop <= fromTop && section.offsetTop + section.offsetHeight > fromTop) {
-                    navLinks.forEach(l => l.classList.remove('active'));
-                    link.classList.add('active');
-                }
-            });
-        });
-        // Initialize EmailJS
-        (function() {
-            emailjs.init("VgGYJ5iMGYwoQuPhW"); // Replace with your actual public key
-        })();
+        <a class="btn btn-primary nav-cta" href="#contact">Start a Project</a>
+      </nav>
+    </div>
+  </header>
 
-        // Contact form submission with EmailJS
-        const form = document.getElementById('contact-form');
-        const formStatus = document.getElementById('form-status');
-        
-        form.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Show loading state
-            const submitBtn = this.querySelector('button[type="submit"]');
-            const originalText = submitBtn.textContent;
-            submitBtn.textContent = 'Sending...';
-            submitBtn.disabled = true;
-            
-            // Clear previous status
-            formStatus.innerHTML = '';
-            formStatus.className = 'form-status';
-            
-            // Get form data
-            const formData = {
-                name: this.querySelector('input[name="name"]').value,
-                email: this.querySelector('input[name="email"]').value,
-                subject: this.querySelector('input[name="subject"]').value,
-                message: this.querySelector('textarea[name="message"]').value
-            };
-            
-            // Send email using EmailJS with proper error handling
-            const templateParams = {
-                to_name: 'Gaurav',
-                to_email: 'gauravkmadhuaka@gmail.com',
-                from_name: formData.name,
-                from_email: formData.email,
-                subject: formData.subject,
-                message: formData.message,
-                reply_to: formData.email
-            };
-            
-            console.log('Sending email with params:', templateParams);
-            
-            // Send email with your service and template
-            emailjs.send('service_0wz3l4p', 'template_mfjih6d', templateParams)
-            .then(function(response) {
-                // Success
-                submitBtn.textContent = originalText;
-                submitBtn.disabled = false;
-                formStatus.innerHTML = '<div class="success-message"><i class="fas fa-check-circle"></i> Message sent successfully! I\'ll get back to you soon.</div>';
-                formStatus.className = 'form-status success';
-                form.reset();
-                
-                // Hide success message after 5 seconds
-                setTimeout(() => {
-                    formStatus.innerHTML = '';
-                    formStatus.className = 'form-status';
-                }, 5000);
-            })
-            .catch(function(error) {
-                // Error with detailed logging
-                console.error('EmailJS Error:', error);
-                submitBtn.textContent = originalText;
-                submitBtn.disabled = false;
-                formStatus.innerHTML = '<div class="error-message"><i class="fas fa-exclamation-circle"></i> Failed to send message. Error: ' + error.text + '</div>';
-                formStatus.className = 'form-status error';
-                
-                // Hide error message after 5 seconds
-                setTimeout(() => {
-                    formStatus.innerHTML = '';
-                    formStatus.className = 'form-status';
-                }, 5000);
-            });
-        });
-    </script>
+  <main id="main">
+    <section class="hero section" id="top">
+      <div class="crop-marks" aria-hidden="true"></div>
+      <div class="shell hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Freelance · Websites, stores, applications</p>
+          <h1>Websites, E&#8209;commerce &amp; Custom Web Applications</h1>
+          <p>Businesses hire me for a public website, a Shopify store, or an application their team can run. Share what you need. I'll scope the work and build it.</p>
+          <p class="hero-support">Frontend, backend, stores, and cloud. The tools follow the project.</p>
+          <div class="hero-actions">
+            <a class="wave-btn" href="#contact" aria-label="Start a Project">
+              <span class="wave-line wave-line-a" aria-hidden="true"><span>S</span><span>T</span><span>A</span><span>R</span><span>T</span><span class="space"></span><span>A</span><span class="space"></span><span>P</span><span>R</span><span>O</span><span>J</span><span>E</span><span>C</span><span>T</span></span>
+              <span class="wave-line wave-line-b" aria-hidden="true"><span>L</span><span>E</span><span>T</span><span>'</span><span>S</span><span class="space"></span><span>W</span><span>O</span><span>R</span><span>K</span><span class="space"></span><span>T</span><span>O</span><span>G</span><span>E</span><span>T</span><span>H</span><span>E</span><span>R</span></span>
+            </a>
+            <a class="btn btn-secondary" href="#work">View My Work</a>
+          </div>
+          <p class="availability"><svg class="spin-mark" viewBox="0 0 250 250" aria-hidden="true"><path d="M133.929 0H116.071V103.445L42.925 30.298L30.298 42.925L103.445 116.071H0V133.929H103.444L30.298 207.075L42.925 219.701L116.071 146.555V250H133.929V146.555L207.075 219.701L219.701 207.075L146.555 133.929H250V116.071H146.555L219.701 42.925L207.075 30.298L133.929 103.444V0Z"></path></svg>Currently available for selected freelance projects.</p>
+        </div>
+        <figure class="stage" data-work-slider>
+          <div class="work-slider" aria-roledescription="carousel" aria-label="Selected work">
+            <div class="work-track" data-work-track>
+              <article class="work-slide">
+                <img src="https://image.thum.io/get/allowJPG/maxAge/12/width/1280/crop/720/noanimate/https://www.americanaroma.co/" data-fallback="images/american-aroma.jpg" width="1600" height="869" alt="American Aroma Shopify storefront showing a floral hero and shop navigation" fetchpriority="high">
+                <div class="work-slide-copy">
+                  <p>Shopify</p>
+                  <strong>American Aroma</strong>
+                </div>
+              </article>
+              <article class="work-slide">
+                <img src="https://image.thum.io/get/allowJPG/maxAge/12/width/1280/crop/720/noanimate/https://blossomsaroma.com/" data-fallback="images/blossoms-aroma.jpg" width="1600" height="869" alt="Blossoms Aroma homepage with a dark fragrance hero and product navigation" loading="lazy">
+                <div class="work-slide-copy">
+                  <p>Business website</p>
+                  <strong>Blossoms Aroma</strong>
+                </div>
+              </article>
+              <article class="work-slide">
+                <img src="https://image.thum.io/get/allowJPG/maxAge/12/width/1280/crop/720/noanimate/https://www.houseofozo.com/" data-fallback="images/house-of-ozo.jpg" width="1600" height="861" alt="House of Ozo homepage with a waitlist for a contemporary perfumery" loading="lazy">
+                <div class="work-slide-copy">
+                  <p>E-commerce</p>
+                  <strong>House of Ozo</strong>
+                </div>
+              </article>
+              <article class="work-slide">
+                <img src="https://image.thum.io/get/allowJPG/maxAge/12/width/1280/crop/720/noanimate/https://akshatvastu.com/" data-fallback="images/akshat-vastu.jpg" width="1600" height="829" alt="Akshat Vastu service website with consultation and course navigation" loading="lazy">
+                <div class="work-slide-copy">
+                  <p>Business website</p>
+                  <strong>Akshat Vastu</strong>
+                </div>
+              </article>
+              <article class="work-slide">
+                <img src="https://image.thum.io/get/allowJPG/maxAge/12/width/1280/crop/720/noanimate/https://www.genzfunda.in/" data-fallback="images/genz-funda.jpg" width="1600" height="1000" alt="GenZ Funda homepage for a D2C learning program with course navigation" loading="lazy">
+                <div class="work-slide-copy">
+                  <p>Learning website</p>
+                  <strong>GenZ Funda</strong>
+                </div>
+              </article>
+              <article class="work-slide">
+                <img src="https://image.thum.io/get/allowJPG/maxAge/12/width/1280/crop/720/noanimate/https://ncertkaksha.in/" data-fallback="images/ncert-kaksha.jpg" width="1600" height="1000" alt="NCERT Kaksha Shopify store for handwritten notes with class and exam categories" loading="lazy">
+                <div class="work-slide-copy">
+                  <p>Shopify</p>
+                  <strong>NCERT Kaksha</strong>
+                </div>
+              </article>
+              <article class="work-slide">
+                <div class="live-frame-wrap" data-live-frame>
+                  <iframe src="https://khushitulsyan.netlify.app/" title="Khushi Tulsyan website" loading="lazy" tabindex="-1" referrerpolicy="no-referrer"></iframe>
+                </div>
+                <div class="work-slide-copy">
+                  <p>Brand website</p>
+                  <strong>Khushi Tulsyan</strong>
+                </div>
+              </article>
+              <article class="work-slide">
+                <img src="images/hurema.jpg" width="1600" height="1000" alt="Hurema homepage for an HR and payroll platform with feature navigation" loading="lazy">
+                <div class="work-slide-copy">
+                  <p>Product website</p>
+                  <strong>Hurema</strong>
+                </div>
+              </article>
+              <article class="work-slide">
+                <div class="live-frame-wrap" data-live-frame>
+                  <iframe src="https://kickvaultvendorportal.netlify.app/" title="KickVault vendor portal" loading="lazy" tabindex="-1" referrerpolicy="no-referrer"></iframe>
+                </div>
+                <div class="work-slide-copy">
+                  <p>Web application</p>
+                  <strong>KickVault</strong>
+                </div>
+              </article>
+              <article class="work-slide">
+                <img src="images/employee-management.jpg" width="2880" height="1552" alt="Employee Management System invoices screen with paid, overdue, and pending statuses" loading="lazy">
+                <div class="work-slide-copy">
+                  <p>Web application</p>
+                  <strong>Employee Management System</strong>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="work-controls">
+            <button class="work-nav" type="button" data-work-prev aria-label="Previous project">
+              <span aria-hidden="true"></span>
+            </button>
+            <div class="work-dots" data-work-dots>
+              <button type="button" aria-label="Show American Aroma"></button>
+              <button type="button" aria-label="Show Blossoms Aroma"></button>
+              <button type="button" aria-label="Show House of Ozo"></button>
+              <button type="button" aria-label="Show Akshat Vastu"></button>
+              <button type="button" aria-label="Show GenZ Funda"></button>
+              <button type="button" aria-label="Show NCERT Kaksha"></button>
+              <button type="button" aria-label="Show Khushi Tulsyan"></button>
+              <button type="button" aria-label="Show Hurema"></button>
+              <button type="button" aria-label="Show KickVault"></button>
+              <button type="button" aria-label="Show Employee Management System"></button>
+            </div>
+            <button class="work-nav work-nav-next" type="button" data-work-next aria-label="Next project">
+              <span aria-hidden="true"></span>
+            </button>
+          </div>
+          <p class="visually-hidden" data-work-status aria-live="polite"></p>
+        </figure>
+      </div>
+    </section>
+
+    <section class="trust" aria-label="Technologies">
+      <div class="shell">
+        <div class="trust-panel">
+          <div class="trust-head">
+            <p class="eyebrow">Technologies</p>
+            <h2>The range behind a freelance build</h2>
+            <p class="trust-note">The tools change with the project. The starting point is what you need built.</p>
+          </div>
+          <div class="trust-groups">
+            <div class="trust-group">
+              <p class="trust-kicker">Websites and stores</p>
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Next.js</li>
+                <li>Tailwind CSS</li>
+                <li>Framer</li>
+                <li>Shopify</li>
+                <li>Liquid</li>
+                <li>WordPress</li>
+                <li>Custom themes</li>
+                <li>Portfolio sites</li>
+                <li>Website fixes</li>
+                <li>Payment gateways</li>
+              </ul>
+            </div>
+            <div class="trust-group">
+              <p class="trust-kicker">Applications and mobile</p>
+              <ul>
+                <li>Python</li>
+                <li>Django</li>
+                <li>Django REST Framework</li>
+                <li>FastAPI</li>
+                <li>REST APIs</li>
+                <li>React Native</li>
+                <li>Android</li>
+                <li>iOS</li>
+              </ul>
+            </div>
+            <div class="trust-group">
+              <p class="trust-kicker">Data, cloud and launch</p>
+              <ul>
+                <li>PostgreSQL</li>
+                <li>MySQL</li>
+                <li>SQLite</li>
+                <li>Redis</li>
+                <li>AWS</li>
+                <li>Docker</li>
+                <li>Git</li>
+                <li>GitHub</li>
+                <li>GitHub Actions</li>
+                <li>Workspace migrations</li>
+              </ul>
+            </div>
+          </div>
+          <div class="trust-fit">
+            <p><strong>Bring the requirement.</strong> A new website, an online store, a custom application, a mobile screen, an integration, or a fix to something you already have. I'll shape the build around that.</p>
+            <a class="btn btn-text" href="#contact">Tell me what you need</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <div class="services-wrap">
+        <div class="services-intro">
+          <div class="services-reveal">
+            <p class="services-kicker">Freelance work</p>
+            <h2>Services</h2>
+          </div>
+          <div class="services-lead-wrap">
+            <div class="services-mark" aria-hidden="true"></div>
+            <p class="services-lead services-reveal">I take selected freelance projects. A business website, a Shopify store, a custom application, or a fix to something you already have. You bring the requirement. I scope the work and build it.</p>
+          </div>
+        </div>
+
+        <article class="service-panel">
+          <div class="service-panel-inner services-reveal">
+            <h3>Business Websites</h3>
+            <p class="service-desc">A freelance website for a business that needs a clear place to explain its work and take enquiries.</p>
+            <ol class="service-items">
+              <li><span>01</span>Pages for your services, about, and contact</li>
+              <li><span>02</span>A layout that works on phones and desktops</li>
+              <li><span>03</span>Forms and WhatsApp so clients can reach you</li>
+              <li><span>04</span>A map, when the business has a location</li>
+              <li><span>05</span>WordPress or a custom build, chosen for the site</li>
+              <li><span>06</span>Connections to the tools you already use</li>
+            </ol>
+            <a class="service-link" href="#contact" data-enquiry="Business Website">Start a website</a>
+          </div>
+        </article>
+
+        <article class="service-panel">
+          <div class="service-panel-inner services-reveal">
+            <h3>Shopify &amp; E-commerce</h3>
+            <p class="service-desc">Freelance Shopify work for a new store, or for a store that needs its theme and product pages improved.</p>
+            <ol class="service-items">
+              <li><span>01</span>A theme shaped around the store</li>
+              <li><span>02</span>Custom sections for the pages you need</li>
+              <li><span>03</span>Product and collection pages</li>
+              <li><span>04</span>A storefront that works on phones</li>
+              <li><span>05</span>Payment and shipping setup, when the store needs it</li>
+              <li><span>06</span>Improvements to a store you already run</li>
+            </ol>
+            <a class="service-link" href="#contact" data-enquiry="Shopify / E-commerce">Start a store project</a>
+          </div>
+        </article>
+
+        <article class="service-panel">
+          <div class="service-panel-inner services-reveal">
+            <h3>Custom Web Applications</h3>
+            <p class="service-desc">A custom application when a website is not enough: sign-in, an admin area, and a workflow built around how the business operates.</p>
+            <ol class="service-items">
+              <li><span>01</span>Screens for the people who run the work</li>
+              <li><span>02</span>Sign-in, with access limited by role</li>
+              <li><span>03</span>An API that connects the screens to the data</li>
+              <li><span>04</span>A database for the records the business keeps</li>
+              <li><span>05</span>The steps your team actually follows</li>
+              <li><span>06</span>A notice when a step needs attention</li>
+            </ol>
+            <a class="service-link" href="#contact" data-enquiry="Custom Web Application">Start an application</a>
+          </div>
+        </article>
+
+        <article class="service-panel">
+          <div class="service-panel-inner services-reveal">
+            <h3>Website Maintenance &amp; Improvements</h3>
+            <p class="service-desc">Freelance help for a site or application that is already live. Fixes, new sections, and small releases, scoped as we go.</p>
+            <ol class="service-items">
+              <li><span>01</span>Fixes for phones and broken layouts</li>
+              <li><span>02</span>Visual updates to pages you already have</li>
+              <li><span>03</span>Bugs cleared from the current site</li>
+              <li><span>04</span>A new page or section</li>
+              <li><span>05</span>A new connection to a tool you use</li>
+              <li><span>06</span>Content changes</li>
+              <li><span>07</span>Help putting the update live</li>
+            </ol>
+            <a class="service-link" href="#contact" data-enquiry="Website Improvement">Ask about a fix</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="work">
+      <div class="shell">
+        <div class="section-heading">
+          <p class="eyebrow">Work</p>
+          <h2>Selected Work</h2>
+          <p>Live sites for fragrance, education, consultancy, and HR, plus applications for inventory, vendor operations, and quality documents. Public projects link out. Confidential work stays anonymized.</p>
+        </div>
+        <div class="work-toolbar">
+          <div class="filters" role="group" aria-label="Filter projects">
+            <button type="button" data-filter="all" class="is-selected" aria-pressed="true">All</button>
+            <button type="button" data-filter="website" aria-pressed="false">Websites</button>
+            <button type="button" data-filter="shopify" aria-pressed="false">Shopify</button>
+            <button type="button" data-filter="ecommerce" aria-pressed="false">E-commerce</button>
+            <button type="button" data-filter="application" aria-pressed="false">Applications</button>
+          </div>
+          <div class="project-slider-nav">
+            <button class="project-nav" type="button" data-project-prev aria-label="Previous projects">
+              <span aria-hidden="true"></span>
+            </button>
+            <button class="project-nav project-nav-next" type="button" data-project-next aria-label="Next projects">
+              <span aria-hidden="true"></span>
+            </button>
+          </div>
+        </div>
+        <div class="project-grid" data-project-track tabindex="0" aria-label="Selected projects">
+          <article class="project-card" data-categories="website">
+            <div class="project-media">
+              <img src="https://image.thum.io/get/allowJPG/maxAge/12/width/1280/crop/720/noanimate/https://blossomsaroma.com/" data-fallback="images/blossoms-aroma.jpg" width="1600" height="869" alt="Blossoms Aroma homepage with a dark fragrance hero and product navigation" loading="lazy">
+            </div>
+            <div class="project-copy">
+              <p class="project-category">Business website</p>
+              <h3>Blossoms Aroma</h3>
+              <p>A public site for a fragrance business: brand pages, products, and a direct way to get in touch.</p>
+              <div class="tag-row"><span>Website</span></div>
+              <a class="btn btn-text" href="https://blossomsaroma.com/" target="_blank" rel="noopener noreferrer">View Project</a>
+            </div>
+          </article>
+          <article class="project-card" data-categories="shopify ecommerce">
+            <div class="project-media">
+              <img src="https://image.thum.io/get/allowJPG/maxAge/12/width/1280/crop/720/noanimate/https://www.americanaroma.co/" data-fallback="images/american-aroma.jpg" width="1600" height="869" alt="American Aroma Shopify storefront for essential oils and aroma oils" loading="lazy">
+            </div>
+            <div class="project-copy">
+              <p class="project-category">Shopify</p>
+              <h3>American Aroma</h3>
+              <p>A Shopify shop for essential oils, set up so people can browse the catalogue and buy.</p>
+              <div class="tag-row"><span>Shopify</span></div>
+              <a class="btn btn-text" href="https://americanaroma.co/" target="_blank" rel="noopener noreferrer">View Project</a>
+            </div>
+          </article>
+          <article class="project-card" data-categories="website ecommerce">
+            <div class="project-media">
+              <img src="https://image.thum.io/get/allowJPG/maxAge/12/width/1280/crop/720/noanimate/https://www.houseofozo.com/" data-fallback="images/house-of-ozo.jpg" width="1600" height="861" alt="House of Ozo homepage with a waitlist for a contemporary perfumery" loading="lazy">
+            </div>
+            <div class="project-copy">
+              <p class="project-category">E-commerce</p>
+              <h3>House of Ozo</h3>
+              <p>A public site for a contemporary perfumery. The live homepage is a waitlist, with a short note and a reservation form.</p>
+              <div class="tag-row"><span>React</span></div>
+              <a class="btn btn-text" href="https://houseofozo.com/" target="_blank" rel="noopener noreferrer">View Project</a>
+            </div>
+          </article>
+          <article class="project-card" data-categories="website">
+            <div class="project-media">
+              <img src="https://image.thum.io/get/allowJPG/maxAge/12/width/1280/crop/720/noanimate/https://akshatvastu.com/" data-fallback="images/akshat-vastu.jpg" width="1600" height="829" alt="Akshat Vastu service website with consultation and course navigation" loading="lazy">
+            </div>
+            <div class="project-copy">
+              <p class="project-category">Business website</p>
+              <h3>Akshat Vastu</h3>
+              <p>A consultancy site with services, courses, and a way to request a consultation.</p>
+              <div class="tag-row"><span>Website</span></div>
+              <a class="btn btn-text" href="https://akshatvastu.com/" target="_blank" rel="noopener noreferrer">View Project</a>
+            </div>
+          </article>
+          <article class="project-card" data-categories="website">
+            <div class="project-media">
+              <img src="https://image.thum.io/get/allowJPG/maxAge/12/width/1280/crop/720/noanimate/https://www.genzfunda.in/" data-fallback="images/genz-funda.jpg" width="1600" height="1000" alt="GenZ Funda homepage for a D2C learning program with course navigation" loading="lazy">
+            </div>
+            <div class="project-copy">
+              <p class="project-category">Learning website</p>
+              <h3>GenZ Funda</h3>
+              <p>A learning-brand site with courses, digital products, consultations, and enrolment.</p>
+              <div class="tag-row"><span>Website</span></div>
+              <a class="btn btn-text" href="https://www.genzfunda.in/" target="_blank" rel="noopener noreferrer">View Project</a>
+            </div>
+          </article>
+          <article class="project-card" data-categories="shopify ecommerce">
+            <div class="project-media">
+              <img src="https://image.thum.io/get/allowJPG/maxAge/12/width/1280/crop/720/noanimate/https://ncertkaksha.in/" data-fallback="images/ncert-kaksha.jpg" width="1600" height="1000" alt="NCERT Kaksha Shopify store for handwritten notes with class and exam categories" loading="lazy">
+            </div>
+            <div class="project-copy">
+              <p class="project-category">Shopify</p>
+              <h3>NCERT Kaksha</h3>
+              <p>A Shopify store for handwritten notes, organised by class and exam, with bundles and order tracking.</p>
+              <div class="tag-row"><span>Shopify</span></div>
+              <a class="btn btn-text" href="https://ncertkaksha.in/" target="_blank" rel="noopener noreferrer">View Project</a>
+            </div>
+          </article>
+          <article class="project-card" data-categories="website">
+            <div class="project-media">
+              <div class="live-frame-wrap" data-live-frame>
+                  <iframe src="https://khushitulsyan.netlify.app/" title="Khushi Tulsyan website" loading="lazy" tabindex="-1" referrerpolicy="no-referrer"></iframe>
+                </div>
+            </div>
+            <div class="project-copy">
+              <p class="project-category">Brand website</p>
+              <h3>Khushi Tulsyan</h3>
+              <p>A personal site for a marketing professional: background, selected work, and a way to get in touch.</p>
+              <div class="tag-row"><span>React</span></div>
+              <a class="btn btn-text" href="https://khushitulsyan.netlify.app/" target="_blank" rel="noopener noreferrer">View Project</a>
+            </div>
+          </article>
+          <article class="project-card" data-categories="website">
+            <div class="project-media">
+              <img src="images/hurema.jpg" width="1600" height="1000" alt="Hurema homepage for an HR and payroll platform with feature navigation" loading="lazy">
+            </div>
+            <div class="project-copy">
+              <p class="project-category">Product website</p>
+              <h3>Hurema</h3>
+              <p>The public site for an HR and payroll product: features, pricing, and a way to get started.</p>
+              <div class="tag-row"><span>Website</span></div>
+              <a class="btn btn-text" href="https://hurema.in/" target="_blank" rel="noopener noreferrer">View Project</a>
+            </div>
+          </article>
+          <article class="project-card" data-categories="application">
+            <div class="project-media">
+              <div class="live-frame-wrap" data-live-frame>
+                  <iframe src="https://kickvaultvendorportal.netlify.app/" title="KickVault vendor portal" loading="lazy" tabindex="-1" referrerpolicy="no-referrer"></iframe>
+                </div>
+            </div>
+            <div class="project-copy">
+              <p class="project-category">Web application</p>
+              <h3>KickVault Vendor Consignment Portal</h3>
+              <p>A vendor portal built as a full-stack demo: seller checks, listings, invoices, and a chat for the operations team. Not a live client store.</p>
+              <div class="tag-row"><span>React</span><span>Django</span></div>
+              <a class="btn btn-text" href="https://kickvaultvendorportal.netlify.app/" target="_blank" rel="noopener noreferrer">View Project</a>
+              <a class="btn btn-text" href="work/kickvault.html">Case study</a>
+            </div>
+          </article>
+          <article class="project-card" data-categories="application">
+            <div class="project-media">
+              <img src="images/employee-management.jpg" width="2880" height="1552" alt="Employee Management System invoices screen with paid, overdue, and pending statuses" loading="lazy">
+            </div>
+            <div class="project-copy">
+              <p class="project-category">Web application</p>
+              <h3>Employee Management System</h3>
+              <p>A full-stack demo of an internal system: staff, projects, tasks, and invoices, with a React screen and a Django API.</p>
+              <div class="tag-row"><span>React</span><span>Django</span></div>
+              <a class="btn btn-text" href="https://github.com/kuntalgaurav2001/Employee_management_system" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+            </div>
+          </article>
+          <article class="project-card" data-categories="application">
+            <div class="project-media">
+              <img src="images/inventory-login.jpg" width="1024" height="712" alt="Corporate login screen for the chemical inventory application, with password and OTP sign-in" loading="lazy">
+            </div>
+            <div class="project-copy">
+              <p class="project-category">Web application</p>
+              <h3>Chemical Inventory Application</h3>
+              <p>Business application for chemical inventory, formulations, operational workflows and role-based access. Selected details are anonymized.</p>
+              <div class="tag-row"><span>React</span><span>Django</span></div>
+              <a class="btn btn-text" href="work/inventory.html">Case study</a>
+            </div>
+          </article>
+          <article class="project-card" data-categories="application">
+            <div class="project-media">
+              <img src="images/qc-reference.jpg" width="1152" height="864" alt="Reference view of a quality document workspace for COA, SDS and IFRA allergen statements" loading="lazy">
+            </div>
+            <div class="project-copy">
+              <p class="project-category">Web application</p>
+              <h3>QC Document Application</h3>
+              <p>Web application for generating COA, SDS and IFRA allergen statements. The image is a reference view, and selected details are anonymized.</p>
+              <div class="tag-row"><span>React</span><span>FastAPI</span></div>
+              <a class="btn btn-text" href="work/quality.html">Case study</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="experience">
+      <div class="shell">
+        <div class="section-heading">
+          <p class="eyebrow">Behind the websites</p>
+          <h2>Product sites and business applications</h2>
+          <p>Hurema is a public product website. KickVault and the employee system are full-stack demos you can inspect. The inventory and quality-document applications are real project types, with the company name and private details left off.</p>
+        </div>
+        <div class="case-list">
+          <article class="case-card">
+            <figure class="case-media">
+              <img src="images/hurema.jpg" width="1600" height="1000" alt="Hurema homepage for an HR and payroll platform with feature navigation">
+            </figure>
+            <div class="case-copy">
+              <p class="project-category">Public website</p>
+              <h3>Hurema</h3>
+              <p>The public site for an HR and payroll product: features, pricing, and a way to get started.</p>
+              <div class="case-foot">
+                <div class="tag-row"><span>Website</span></div>
+                <div class="case-links">
+                  <a class="btn btn-text" href="https://hurema.in/" target="_blank" rel="noopener noreferrer">View website</a>
+                  <a class="btn btn-text" href="work/payroll.html">Case study</a>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="case-card">
+            <figure class="case-media">
+              <div class="live-frame-wrap" data-live-frame>
+                <iframe src="https://kickvaultvendorportal.netlify.app/" title="KickVault vendor portal" loading="lazy" tabindex="-1" referrerpolicy="no-referrer"></iframe>
+              </div>
+            </figure>
+            <div class="case-copy">
+              <p class="project-category">Public demo</p>
+              <h3>KickVault Vendor Consignment Portal</h3>
+              <p>A vendor portal for seller checks, listings, invoices, and operations chat. A full-stack demo, not a live client store.</p>
+              <div class="case-foot">
+                <div class="tag-row"><span>React</span><span>Django</span><span>PostgreSQL</span><span>Redis</span></div>
+                <div class="case-links">
+                  <a class="btn btn-text" href="work/kickvault.html">Case study</a>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="case-card">
+            <figure class="case-media">
+              <img src="images/inventory-login.jpg" width="1024" height="712" alt="Corporate login screen for the chemical inventory application, with password and OTP sign-in">
+            </figure>
+            <div class="case-copy">
+              <p class="project-category">Confidential</p>
+              <h3>Chemical Inventory Application</h3>
+              <p>Business application for chemical inventory, formulations, operational workflows and role-based access. Selected details are anonymized.</p>
+              <div class="case-foot">
+                <div class="tag-row"><span>React</span><span>Django</span><span>PostgreSQL</span><span>AWS</span></div>
+                <div class="case-links">
+                  <a class="btn btn-text" href="work/inventory.html">Case study</a>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="case-card">
+            <figure class="case-media">
+              <img src="images/qc-reference.jpg" width="1152" height="864" alt="Reference view of a quality document workspace for COA, SDS and IFRA allergen statements">
+            </figure>
+            <div class="case-copy">
+              <p class="project-category">Confidential</p>
+              <h3>QC Document Application</h3>
+              <p>Web application for generating COA, SDS and IFRA allergen statements. The image is a reference view, and selected details are anonymized.</p>
+              <div class="case-foot">
+                <div class="tag-row"><span>React</span><span>FastAPI</span><span>PostgreSQL</span><span>AWS</span></div>
+                <div class="case-links">
+                  <a class="btn btn-text" href="work/quality.html">Case study</a>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="process">
+      <div class="shell">
+        <div class="section-heading">
+          <p class="eyebrow">Process</p>
+          <h2>How I Work</h2>
+          <p>Five steps, from the first conversation to a site or application you can use.</p>
+        </div>
+        <ol class="process-list">
+          <li>
+            <span>01</span>
+            <h3>Discover</h3>
+            <p>We talk through the business, who will use it, and what has to be live.</p>
+          </li>
+          <li>
+            <span>02</span>
+            <h3>Plan</h3>
+            <p>I set the pages or features, the tools, and the scope before building.</p>
+          </li>
+          <li>
+            <span>03</span>
+            <h3>Build</h3>
+            <p>I build the site or application so it works on the screens your customers use.</p>
+          </li>
+          <li>
+            <span>04</span>
+            <h3>Review</h3>
+            <p>You see the work, send feedback, and I adjust it before it goes live.</p>
+          </li>
+          <li>
+            <span>05</span>
+            <h3>Launch</h3>
+            <p>I put it live and hand over what you need to run it, including fixes we have agreed.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section" id="stack">
+      <div class="shell">
+        <div class="section-heading">
+          <p class="eyebrow">How projects are delivered</p>
+          <h2>A practical setup for the work you need</h2>
+          <p>You hire me for a business website, a Shopify store, or a custom application. I choose a small set of tools for that scope, then build it, connect it, and get it live.</p>
+        </div>
+        <ol class="stack-track">
+          <li>
+            <span class="stack-index">01</span>
+            <p class="stack-kicker">Business websites</p>
+            <h3>Pages your customers can use</h3>
+            <p>Responsive pages for a company, a service, or a product, readable on phones and desktop screens.</p>
+            <p class="stack-tools">React · JavaScript · HTML · CSS</p>
+          </li>
+          <li>
+            <span class="stack-index">02</span>
+            <p class="stack-kicker">Custom applications</p>
+            <h3>Logins, workflows, and APIs</h3>
+            <p>Accounts, role-based access, and a backend when a brochure site is not enough for the way your business works.</p>
+            <p class="stack-tools">Python · Django · FastAPI · REST APIs</p>
+          </li>
+          <li>
+            <span class="stack-index">03</span>
+            <p class="stack-kicker">Shopify and WordPress</p>
+            <h3>Stores and sites you can keep updating</h3>
+            <p>Theme work, product pages, and content sites you can change after launch without starting over.</p>
+            <p class="stack-tools">Shopify · Liquid · WordPress</p>
+          </li>
+          <li>
+            <span class="stack-index">04</span>
+            <p class="stack-kicker">Launch</p>
+            <h3>Data stored, then the site goes live</h3>
+            <p>A database for the product, plus hosting and deployment so the finished work can go live.</p>
+            <p class="stack-tools">PostgreSQL · MySQL · AWS · Docker</p>
+          </li>
+        </ol>
+        <p class="stack-close">Not sure which one fits? <a class="btn btn-text" href="#contact">Tell me about the project</a></p>
+      </div>
+    </section>
+
+    <section class="section" id="why">
+      <div class="shell">
+        <div class="why-panel">
+          <div class="why-intro">
+            <p class="eyebrow">Working together</p>
+            <h2>Why Work With Me</h2>
+            <p>You hire one person, from the first brief through launch.</p>
+          </div>
+          <ol class="why-list">
+            <li>
+              <span>01</span>
+              <div>
+                <h3>Business-focused development</h3>
+                <p>I start from what the business needs to explain, sell, or manage, then choose a practical way to build it.</p>
+              </div>
+            </li>
+            <li>
+              <span>02</span>
+              <div>
+                <h3>Direct communication</h3>
+                <p>Scope, progress, and questions stay in one conversation. There is no account team in between.</p>
+              </div>
+            </li>
+            <li>
+              <span>03</span>
+              <div>
+                <h3>Full-stack capability</h3>
+                <p>When a project needs the pages, the API, and the database, they stay on the same brief.</p>
+              </div>
+            </li>
+            <li>
+              <span>04</span>
+              <div>
+                <h3>Modern responsive interfaces</h3>
+                <p>The layout is built for the phones and desktops your customers actually use.</p>
+              </div>
+            </li>
+            <li>
+              <span>05</span>
+              <div>
+                <h3>Custom development</h3>
+                <p>Pages and workflows follow your business, rather than a template left as-is.</p>
+              </div>
+            </li>
+            <li>
+              <span>06</span>
+              <div>
+                <h3>APIs, deployment and support</h3>
+                <p>Launch is part of the job. Later fixes are scoped with you before they start.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="shell">
+        <article class="about-stage">
+          <p class="about-mark" aria-hidden="true">GK</p>
+          <div class="about-copy">
+            <p class="eyebrow">About</p>
+            <h2>Full Stack Developer</h2>
+            <p class="about-lead">Gaurav Kuntal. Hired directly for business websites, Shopify stores, and custom applications.</p>
+            <p>The public work includes fragrance brands, a learning site, a consultancy, and an HR product website. The same practice covers applications for inventory, vendor operations, and quality documents such as COA, SDS, and IFRA allergen statements. Those stay anonymized.</p>
+            <p>You deal with me from the first brief through launch. The price follows the scope, not a fixed package.</p>
+          </div>
+          <div class="about-meta">
+            <p><span>Available</span>I'm currently available for selected freelance projects.</p>
+            <p><span>Pricing</span>Project pricing depends on scope, features, integrations and timeline.</p>
+            <a class="btn btn-primary" href="GAURAV_K_RESUME.pdf" download>Download CV</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="shell faq-layout">
+        <div class="faq-intro">
+          <p class="eyebrow">FAQ</p>
+          <h2>Questions clients usually ask</h2>
+          <p class="faq-lead">A short brief is enough to start. These are the questions that usually come up first.</p>
+        </div>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary><span class="faq-index">01</span><span class="faq-q">How do we start a project?</span><span class="faq-toggle" aria-hidden="true"></span></summary>
+            <div class="faq-answer"><p>Send a short note about what you want to build, any current website, and your timeline. Use the enquiry form, email or WhatsApp. I'll review it and reply with the next steps.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary><span class="faq-index">02</span><span class="faq-q">Do you work with existing websites?</span><span class="faq-toggle" aria-hidden="true"></span></summary>
+            <div class="faq-answer"><p>Yes. I can fix, improve or extend a website or application that already exists, including layout issues, new sections and integrations.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary><span class="faq-index">03</span><span class="faq-q">Can you build a website from a Figma design?</span><span class="faq-toggle" aria-hidden="true"></span></summary>
+            <div class="faq-answer"><p>Yes. If you already have a design, I can build from it. If you don't, we can define the pages and structure before development starts.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary><span class="faq-index">04</span><span class="faq-q">Can you customize Shopify themes?</span><span class="faq-toggle" aria-hidden="true"></span></summary>
+            <div class="faq-answer"><p>Yes. I work on theme customization, custom Liquid sections, product pages and other storefront improvements.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary><span class="faq-index">05</span><span class="faq-q">Can you build a custom admin panel?</span><span class="faq-toggle" aria-hidden="true"></span></summary>
+            <div class="faq-answer"><p>Yes. I build admin interfaces with authentication, role-based access and workflows connected to an API and database.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary><span class="faq-index">06</span><span class="faq-q">Can you work with an existing backend or API?</span><span class="faq-toggle" aria-hidden="true"></span></summary>
+            <div class="faq-answer"><p>Yes. I can build a frontend against an API you already have, or extend the backend when the project needs it.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary><span class="faq-index">07</span><span class="faq-q">Do you provide post-launch maintenance?</span><span class="faq-toggle" aria-hidden="true"></span></summary>
+            <div class="faq-answer"><p>Yes, when we agree the scope. That can include fixes, content or section updates, and deployment support.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary><span class="faq-index">08</span><span class="faq-q">How is project pricing determined?</span><span class="faq-toggle" aria-hidden="true"></span></summary>
+            <div class="faq-answer"><p>Pricing depends on scope, features, integrations and timeline. Share what you need and I'll discuss a suitable approach. There is no single fixed price listed here.</p></div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cta-band">
+      <div class="shell">
+        <div class="cta-inner">
+          <div>
+            <p class="eyebrow">Next step</p>
+            <h2>Tell me what you need built</h2>
+            <p>Send what the business needs: a new site, a store, an application, or a fix. I'll reply with how we can proceed.</p>
+          </div>
+          <a class="btn btn-primary" href="#contact">Discuss Your Project</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="shell contact-grid">
+        <div class="contact-panel">
+          <div class="contact-glow" aria-hidden="true"></div>
+          <div class="contact-copy">
+            <p class="eyebrow">Contact</p>
+            <h2>Have a project in mind?</h2>
+            <p>A short note is enough. What you want built, any site you already have, and when you hope to launch.</p>
+          </div>
+          <ul class="contact-list">
+            <li>
+              <span class="contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M4 7h16v10H4z"></path><path d="M4 7l8 6 8-6"></path></svg>
+              </span>
+              <a href="mailto:gauravkmadhuaka@gmail.com">gauravkmadhuaka@gmail.com</a>
+            </li>
+            <li>
+              <span class="contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M7 5h3l1 4-2 1a12 12 0 0 0 5 5l1-2 4 1v3a2 2 0 0 1-2 2A14 14 0 0 1 5 7a2 2 0 0 1 2-2z"></path></svg>
+              </span>
+              <a href="https://wa.me/917451967933" target="_blank" rel="noopener noreferrer">WhatsApp · +91 74519 67933</a>
+            </li>
+            <li>
+              <span class="contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><circle cx="6" cy="6" r="1.2"></circle><path d="M5 10.5h2V19H5zM11 19v-4.2a2.2 2.2 0 0 1 4.4 0V19M11 14.8h4.4M15.4 19V12.4A4.4 4.4 0 0 0 11 10"></path></svg>
+              </span>
+              <a href="https://www.linkedin.com/in/gauravkumarkuntal" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </li>
+            <li>
+              <span class="contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M9 19c-4 1.2-4-2-6-2m12 4v-3.2a2.7 2.7 0 0 0-.8-2.1c2.6-.3 5.3-1.3 5.3-5.8a4.5 4.5 0 0 0-1.2-3.1 4.2 4.2 0 0 0-.1-3.1s-1-.3-3.2 1.2a11 11 0 0 0-5.8 0C7.1 1.4 6.1 1.7 6.1 1.7a4.2 4.2 0 0 0-.1 3.1A4.5 4.5 0 0 0 4.8 8c0 4.5 2.7 5.5 5.3 5.8a2.7 2.7 0 0 0-.8 2.1V21"></path></svg>
+              </span>
+              <a href="https://github.com/kuntalgaurav2001" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </li>
+          </ul>
+          <div class="contact-art" aria-hidden="true">
+            <svg class="contact-graphic" viewBox="0 0 320 180">
+              <rect x="18" y="28" width="92" height="58" rx="14"></rect>
+              <rect x="132" y="78" width="108" height="64" rx="14"></rect>
+              <rect x="214" y="22" width="78" height="46" rx="14"></rect>
+              <circle cx="58" cy="132" r="16"></circle>
+              <circle cx="168" cy="46" r="8"></circle>
+              <path d="M64 86v18c0 16 18 22 52 22"></path>
+              <path d="M186 78V58c0-8 8-12 28-12"></path>
+              <path d="M74 132h46"></path>
+            </svg>
+          </div>
+        </div>
+        <form class="enquiry-form" id="enquiry-form">
+          <div class="form-head">
+            <p class="eyebrow">Enquiry</p>
+            <h2>Project enquiry</h2>
+          </div>
+          <div class="form-grid two">
+            <label>Name
+              <input type="text" name="name" autocomplete="name" required>
+            </label>
+            <label>Email
+              <input type="email" name="email" autocomplete="email" required>
+            </label>
+            <label>Phone / WhatsApp
+              <input type="tel" name="phone" autocomplete="tel">
+            </label>
+            <label>Company / Business
+              <input type="text" name="company" autocomplete="organization">
+            </label>
+          </div>
+          <div class="form-grid">
+            <label>Project Type
+              <select id="project-type" name="project_type" required>
+                <option value="">Select a project type</option>
+                <option>Business Website</option>
+                <option>Shopify / E-commerce</option>
+                <option>WordPress</option>
+                <option>Custom Web Application</option>
+                <option>API / Backend</option>
+                <option>Website Improvement</option>
+                <option>Maintenance</option>
+                <option>Other</option>
+              </select>
+            </label>
+            <label>Project Description
+              <textarea name="description" required></textarea>
+            </label>
+          </div>
+          <label class="hp" aria-hidden="true">Website
+            <input type="text" name="company_website" tabindex="-1" autocomplete="off">
+          </label>
+          <p class="form-note">Project pricing depends on scope, features, integrations and timeline.</p>
+          <button class="btn btn-primary" type="submit">Send Project Enquiry</button>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <div class="crowd">
+      <canvas data-crowd aria-hidden="true"></canvas>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <a class="logo" href="#top"><span class="logo-mark" aria-hidden="true">GK</span><span class="logo-name">Gaurav Kuntal</span></a>
+          <p>Freelance websites, Shopify stores, and custom applications for businesses.</p>
+          <a class="btn btn-primary footer-cta" href="#contact">Start a Project</a>
+        </div>
+        <div>
+          <p class="footer-label">Explore</p>
+          <ul class="footer-links">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#process">Process</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-label">Connect</p>
+          <ul class="footer-links">
+            <li><a href="mailto:gauravkmadhuaka@gmail.com">Email</a></li>
+            <li><a href="https://wa.me/917451967933" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+            <li><a href="https://www.linkedin.com/in/gauravkumarkuntal" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://github.com/kuntalgaurav2001" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bar">
+        <p class="copyright">© 2026 Gaurav Kuntal</p>
+        <p>Available for selected freelance projects.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
-
 </html>
