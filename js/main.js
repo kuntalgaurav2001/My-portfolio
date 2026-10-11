@@ -192,13 +192,8 @@
       closeWelcome();
     } else {
       if (welcomeVideo) {
-        welcomeVideo.playbackRate = 8;
         var playWelcome = welcomeVideo.play();
-        if (playWelcome && playWelcome.then) {
-          playWelcome.then(function () {
-            welcomeVideo.playbackRate = 8;
-          }).catch(function () {});
-        }
+        if (playWelcome && playWelcome.catch) playWelcome.catch(function () {});
       }
       welcomeTimer = window.setTimeout(function () {
         if (welcomeVideo) welcomeVideo.pause();
