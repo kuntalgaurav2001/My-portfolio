@@ -1,16 +1,6 @@
 (function () {
   document.documentElement.classList.add("js");
 
-  document.querySelectorAll("img[data-fallback]").forEach(function (img) {
-    function useFallback() {
-      var fallback = img.getAttribute("data-fallback");
-      if (!fallback || img.getAttribute("src") === fallback) return;
-      img.setAttribute("src", fallback);
-    }
-    img.addEventListener("error", useFallback);
-    if (img.complete && img.naturalWidth === 0) useFallback();
-  });
-
   function fitLiveFrames() {
     document.querySelectorAll("[data-live-frame]").forEach(function (wrap) {
       var frame = wrap.querySelector("iframe");
@@ -21,6 +11,115 @@
 
   fitLiveFrames();
   window.addEventListener("resize", fitLiveFrames);
+
+  document.querySelectorAll("iframe[data-src]").forEach(function (frame) {
+    var target = frame.closest("[data-live-frame]") || frame;
+
+    function loadFrame() {
+      if (frame.getAttribute("src")) return;
+      frame.setAttribute("src", frame.getAttribute("data-src"));
+      fitLiveFrames();
+    }
+
+    if (!("IntersectionObserver" in window)) {
+      loadFrame();
+      return;
+    }
+
+    var watcher = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        loadFrame();
+        watcher.disconnect();
+      });
+    }, { rootMargin: "180px" });
+    watcher.observe(target);
+  });
+
+  (function setupCaseDeck() {
+    var stage = document.querySelector("[data-case-stage]");
+    var deck = document.querySelector("[data-case-deck]");
+    if (!stage || !deck) return;
+
+    var cards = Array.prototype.slice.call(deck.querySelectorAll(".case-card"));
+    var count = cards.length;
+    if (count < 2) return;
+
+    var reduce = window.matchMedia("(prefers-reduced-motion: reduce)");
+    var wide = window.matchMedia("(min-width: 780px)");
+    var frame = 0;
+
+    function fanout(width) {
+      if (width <= 1200) return 48;
+      if (width <= 1370) return 72;
+      if (width <= 1600) return 108;
+      return 132;
+    }
+
+    function progress() {
+      var scrollable = stage.offsetHeight - window.innerHeight;
+      if (scrollable <= 0) return 0;
+      var traveled = Math.min(scrollable, Math.max(0, -stage.getBoundingClientRect().top));
+      return traveled / scrollable;
+    }
+
+    function place(amount) {
+      var active = wide.matches && !reduce.matches;
+      stage.classList.toggle("is-deck", active);
+      if (!active) {
+        cards.forEach(function (card) {
+          card.style.transform = "";
+          card.style.zIndex = "";
+        });
+        return;
+      }
+
+      var shell = stage.querySelector(".shell");
+      var side = shell ? Math.max(20, shell.getBoundingClientRect().left) : 40;
+      var cardWidth = cards[0].getBoundingClientRect().width;
+      var stride = cardWidth + fanout(window.innerWidth);
+      var available = deck.clientWidth - side * 2;
+      var fillGap = (available - cardWidth) / (count - 1);
+      var gap = Math.min(Math.max(fillGap, 96), stride * 0.72);
+      var move = stride - gap;
+      var step = 1 / (count - 1);
+      var x = cards.map(function (_, index) {
+        return stride * index + side;
+      });
+
+      for (var s = 0; s < count - 1; s += 1) {
+        var local = Math.min(1, Math.max(0, (amount - s * step) / step));
+        if (local <= 0) break;
+        for (var j = s + 1; j < count; j += 1) x[j] -= move * local;
+      }
+
+      cards.forEach(function (card, index) {
+        card.style.transform = "translate3d(" + x[index] + "px, 0, 0)";
+        if (index === 0) {
+          card.style.zIndex = String(count);
+          return;
+        }
+        var stepProgress = Math.min(1, Math.max(0, (amount - (index - 1) * step) / step));
+        card.style.zIndex = stepProgress > 0.01 ? String(count + index) : String(count - index);
+      });
+    }
+
+    function update() {
+      frame = 0;
+      place(progress());
+    }
+
+    function requestUpdate() {
+      if (frame) return;
+      frame = window.requestAnimationFrame(update);
+    }
+
+    place(progress());
+    window.addEventListener("scroll", requestUpdate, { passive: true });
+    window.addEventListener("resize", requestUpdate);
+    if (reduce.addEventListener) reduce.addEventListener("change", requestUpdate);
+    if (wide.addEventListener) wide.addEventListener("change", requestUpdate);
+  })();
 
   var crowdCanvas = document.querySelector("[data-crowd]");
   if (crowdCanvas && crowdCanvas.getContext) {
@@ -154,7 +253,22 @@
       crowdReset();
       if (!crowdReduce) window.requestAnimationFrame(crowdLoop);
     };
-    crowdImg.src = "images/peeps/all-peeps.png";
+    function startCrowd() {
+      if (crowdImg.getAttribute("src")) return;
+      crowdImg.src = "images/peeps/all-peeps.png";
+    }
+    if ("IntersectionObserver" in window) {
+      var crowdWatch = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (!entry.isIntersecting) return;
+          startCrowd();
+          crowdWatch.disconnect();
+        });
+      }, { rootMargin: "400px" });
+      crowdWatch.observe(crowdCanvas);
+    } else {
+      startCrowd();
+    }
   }
 
   var welcome = document.querySelector("[data-welcome]");
